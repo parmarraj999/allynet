@@ -1,8 +1,11 @@
 import React from 'react'
+import Sidebar from '../../layout/sidebar/sidebar'
 
 function LandingPage() {
   return (
-    <div>LandingPage</div>
+    <div>
+      <Sidebar/>
+    </div>
   )
 }
 
