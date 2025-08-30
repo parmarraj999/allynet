@@ -7,6 +7,7 @@ import heromessage from './assets/heromessage.png';
 import heroavatars from './assets/heroavatars.png';
 import heroarrow from './assets/heroarrow.png';
 import herotick from './assets/herotick.png';
+import hero2 from './assets/hero2.png';
 
 function LandingPage() {
   const bigImgConfig = { width: 1478, height: 834 };
@@ -27,6 +28,8 @@ function LandingPage() {
 
   return (
     <div className="landing-parent">
+
+      {/* Navbar Section */}
       <section className="navbar-section">
         <div className="navbar-card">
           <div className="logo-text">ALLYNET</div>
@@ -59,6 +62,7 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* Hero Section */}
       <section className="hero-section">
         <div className="big-image-container">
           <img src={heroimg} alt="Hero background" className="big-bg" />
@@ -93,6 +97,21 @@ function LandingPage() {
           </p>
         </div>
       </section>
+
+      {/* Hero2 Section */}
+      <section className="hero2-section">
+        <div className="big-image2-container">
+          <img src={hero2} alt="Hero background" className="big-bg2" />
+          <div className="hero2-content">
+  <h1 className="hero2-title">
+    Meet ALLYNET, the first platform that combines verified mentorship, 
+    <span className="half-title"> clear career roadmaps, and gamified learning — built to help students grow faster with the right guidance.</span>
+  </h1>
+  <a href="#signup" className="hero2-button">Get Started</a>
+</div>
+        </div>
+      </section>
+
     </div>
   );
 }
