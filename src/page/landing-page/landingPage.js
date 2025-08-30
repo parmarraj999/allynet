@@ -1,8 +1,6 @@
 import React from 'react';
 import './landingPage.css';
 import arrowIcon from './assets/arrow1.png';
-
-// Import images
 import heroimg from './assets/heroimg.png';
 import herorocket from './assets/herorocket.png';
 import heromessage from './assets/heromessage.png';
@@ -11,9 +9,8 @@ import heroarrow from './assets/heroarrow.png';
 import herotick from './assets/herotick.png';
 
 function LandingPage() {
-  const bigImgConfig = { width: 1478, height: 834 }; // Figma dimensions
+  const bigImgConfig = { width: 1478, height: 834 };
 
-  // Convert px to % relative to big image
   const smallImages = [
     { src: herorocket, x: 58.09, y: 90.66, width: 182.82, height: 182.82 },
     { src: heromessage, x: 815.25, y: 145.13, width: 156.51, height: 156.51 },
@@ -30,13 +27,13 @@ function LandingPage() {
 
   return (
     <div className="landing-parent">
-      {/* Navbar */}
       <section className="navbar-section">
         <div className="navbar-card">
           <div className="logo-text">ALLYNET</div>
 
           <div className="menu-links">
             <a href="#home" className="menu-item">Home</a>
+
             <div className="menu-item dropdown">
               Feature
               <img src={arrowIcon} alt="" className="arrow-icon" />
@@ -45,6 +42,7 @@ function LandingPage() {
                 <a href="#feature2">Feature 2</a>
               </div>
             </div>
+
             <div className="menu-item dropdown">
               Community
               <img src={arrowIcon} alt="" className="arrow-icon" />
@@ -53,6 +51,7 @@ function LandingPage() {
                 <a href="#events">Events</a>
               </div>
             </div>
+
             <a href="#about" className="menu-item">About Us</a>
           </div>
 
@@ -60,12 +59,10 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* Hero Section */}
       <section className="hero-section">
         <div className="big-image-container">
           <img src={heroimg} alt="Hero background" className="big-bg" />
 
-          {/* Small images */}
           {smallImages.map((img, idx) => (
             <img
               key={idx}
@@ -81,12 +78,19 @@ function LandingPage() {
             />
           ))}
 
-          {/* Hero Text & Button */}
           <div className="hero-content">
             <h1 className="hero-title">Mentorship, Roadmaps & Growth</h1>
             <p className="hero-subtitle">All In One Place</p>
             <a href="#signup" className="hero-button">Get Started</a>
           </div>
+        </div>
+
+        <div className="next-section">
+          <p className="next-text">
+            <span className="quotes">“”</span>
+            ALLYNET connects students with experienced alumni and mentors, offering clear career roadmaps and a supportive community. No more random resources — just trusted guidance, all in one place.
+            <span className="quotes">“”</span>
+          </p>
         </div>
       </section>
     </div>
