@@ -28,6 +28,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  gap: 20px;
 }
 
 .menu-item {
@@ -156,27 +157,25 @@
 }
 
 .next-section {
-  padding: 12.5rem 0;
+  padding: 12.5rem 0;   /* 200px top & bottom */
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
 }
 
 .next-text {
-  font-size: 1.875rem; /* 30px */
-  font-weight: 600; /* semi-bold */
-  line-height: 1.6;
-  max-width: 70.238%;
-  line-height: 1.6;
+  font-size: 1.875rem;   /* 30px */
+  font-weight: 600;       /* semi-bold */
+  line-height: 1.4;       /* tighter */
+  max-width: 70.238%;         /* width as % of screen */
   margin: 0 auto;
   color: #A2A2A2;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;         /* allow wrapping naturally */
+  align-items: center;     /* center text */
+  justify-content: center;   /* important: allow line breaks */
 }
 
-
 .next-text .quotes {
-  color: #000000; 
+  color: #000000;
 }
