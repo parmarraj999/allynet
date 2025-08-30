@@ -12,11 +12,11 @@
   padding: 0.5rem 1rem;
   background-color: black;
   border-radius: 10px;
-  box-shadow: 5px 4px 25px rgba(0,0,0,.4)
+  box-shadow: 5px 4px 25px rgba(0,0,0,.4);
 }
 
 .logo-text {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   font-weight: 900;
   width: 7.9%;
   color: white;
@@ -32,13 +32,17 @@
 }
 
 .menu-item {
-  font-size: 1rem; 
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   color: #787878;
   display: flex;
   align-items: center;
-  
+  position: relative;
+}
+
+.menu-item.dropdown {
+  position: relative;
 }
 
 .arrow-icon {
@@ -48,6 +52,7 @@
   position: relative;
   top: 2px;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -56,7 +61,7 @@
   background-color: black;
   min-width: 120px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  z-index: 1;
+  z-index: 10;
   flex-direction: column;
 }
 
@@ -67,9 +72,6 @@
   font-weight: 500;
 }
 
-
-
-
 .dropdown:hover .dropdown-content {
   display: flex;
   flex-direction: column;
@@ -77,13 +79,12 @@
 
 .navbutton {
   margin-left: auto;
-  
-  padding: .5rem 1.2rem;
+  padding: 0.5rem 1.2rem;
   background-color: #2B2B2B;
   border: 1px solid #A7A7A7;
   border-radius: 5px;
   font-size: 1rem;
-  text-wrap: nowrap; 
+  text-wrap: nowrap;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
@@ -125,7 +126,7 @@
 }
 
 .hero-title {
-  font-size: 2.8125rem; 
+  font-size: 2.8125rem;
   font-weight: bold;
   color: white;
   white-space: nowrap;
@@ -133,7 +134,7 @@
 }
 
 .hero-subtitle {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   font-weight: bold;
   color: #A7A7A7;
   margin: 0.1px 0 1px 0;
@@ -146,7 +147,7 @@
   background-color: #fff;
   border: 1px solid #A7A7A7;
   border-radius: 30px;
-  font-size: 1rem; 
+  font-size: 1rem;
   font-weight: 600;
   color: #000;
   cursor: pointer;
@@ -157,23 +158,22 @@
 }
 
 .next-section {
-  padding: 12.5rem 0;   /* 200px top & bottom */
+  padding: 12.5rem 0;
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
 }
 
 .next-text {
-  font-size: 1.875rem;   /* 30px */
-  font-weight: 600;       /* semi-bold */
-  line-height: 1.4;       /* tighter */
-  max-width: 70.238%;         /* width as % of screen */
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  max-width: 70.238%;
   margin: 0 auto;
   color: #A2A2A2;
   overflow: hidden;
-  display: block;         /* allow wrapping naturally */
-  align-items: center;     /* center text */
-  justify-content: center;   /* important: allow line breaks */
+  display: block;
+  text-align: center;
 }
 
 .next-text .quotes {
