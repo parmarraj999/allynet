@@ -95,67 +95,81 @@ function LandingPage() {
             <a href="#signup" className="hero-button">Get Started</a>
           </div>
         </div>
-
-        <div className="next-section">
-          <p className="next-text">
-            <span className="quotes">“”</span>
-            ALLYNET connects students with experienced alumni and mentors, offering clear career roadmaps and a supportive community. No more random resources — just trusted guidance, all in one place.
-            <span className="quotes">“”</span>
-          </p>
-        </div>
       </section>
+
+      <div className="next-section">
+        <p className="next-text">
+          <span className="quotes">“”</span>
+          ALLYNET connects students with experienced alumni and mentors, offering clear career roadmaps and a supportive community. No more random resources — just trusted guidance, all in one place.
+          <span className="quotes">“”</span>
+        </p>
+      </div>
+
       <section className="whyus">
-        <div class="left-part">
-          <h1 class="heading">Why Choose 
-Allynet ?</h1>
-<p class="subheading">From mentorship to roadmaps — we’ve got you covered with all or your problems in one place and with single click</p>
-        </div>
-        <div class="right-part">
-          <div className="cards">
-            <img src={user_follow} alt="card1"/>
-            <h1>Verified Mentorship</h1>
-            <p>Connect with verified alumni & seniors who guide you with real experience — not random advice</p>
+        <div className='why-us-container' >
+          <div class="left-part">
+            <h1 class="heading">Why Choose
+              Allynet ?</h1>
+            <p class="subheading">From mentorship to roadmaps — we’ve got you covered with all or your problems in one place and with single click</p>
           </div>
-          <div className="cards">
-            <img src={mind_map} alt="card2"/>
-            <h2>Career Roadmap</h2>
-            <p>Follow step-by-step roadmaps for placements, higher studies, and exams with curated notes & guides.</p>
-          </div>
-          <div className="cards">
-            <img src={robot_2_fill} alt="card3"/>
-            <h3>AI Mentor Match</h3>
-            <p>Our AI instantly matches you with the best mentor based on your interests, skills, and goals</p>
+          <div class="right-part">
+            <div className="cards">
+              <img src={user_follow} alt="card1" />
+              <h1>Verified Mentorship</h1>
+              <p>Connect with verified alumni & seniors who guide you with real experience — not random advice</p>
             </div>
             <div className="cards">
-              <img src={medal_fill} alt="card3"/>
+              <img src={mind_map} alt="card2" />
+              <h2>Career Roadmap</h2>
+              <p>Follow step-by-step roadmaps for placements, higher studies, and exams with curated notes & guides.</p>
+            </div>
+            <div className="cards">
+              <img src={robot_2_fill} alt="card3" />
+              <h3>AI Mentor Match</h3>
+              <p>Our AI instantly matches you with the best mentor based on your interests, skills, and goals</p>
+            </div>
+            <div className="cards">
+              <img src={medal_fill} alt="card3" />
               <h4>Gamified Learning</h4>
               <p>Stay motivated with badges, rewards, and leaderboards while learning and sharing knowledge.</p>
             </div>
-          
+
+          </div>
         </div>
       </section>
+
+
       <section className="syct">
         <div className="heading">Share Your Career Today</div>
         <div className="cards2container">
-          <div className="cards2">
-          <img src={mentorship} alt="card1"/>
-          <p>Get mentorship from verified alumni anytime, anywhere</p>
-          <h1>Mentorship</h1>
+          <div className="card2">
+            <img src={mentorship} alt="card1" />
+            <p>Get mentorship from verified alumni anytime, anywhere</p>
+            <div className='card-btn' >
+              <div className='dot red-dot'></div>
+              <h1>Mentorship</h1>
+            </div>
           </div>
-          <div className="cards2">
-          <img src={career_roadmap} alt="card2"/>
-          <p>Follow structured roadmaps for placements & higher studies</p>
-          <h2>Career Roadmap</h2>
+          <div className="card2">
+            <img src={career_roadmap} alt="card2" />
+            <p>Follow structured roadmaps for placements & higher studies</p>
+             <div className='card-btn' >
+              <div className='dot green-dot'></div>
+              <h1>Career Roadmap</h1>
+            </div>
           </div>
-          <div className="cards2">
-          <img src={gamification} alt="card3"/>
-          <p>Stay motivated with badges, rewards & leaderboards</p>
-          <h3>Gamification</h3>
+          <div className="card2">
+            <img src={gamification} alt="card3" />
+            <p>Stay motivated with badges, rewards & leaderboards</p>
+             <div className='card-btn' >
+              <div className='dot blue-dot'></div>
+              <h1>Gemification</h1>
+            </div>
           </div>
         </div>
         <a href="#signup" className="hero-button-black">GetStarted</a>
-        
-        
+
+
       </section>
 
       {/* Hero2 Section */}
@@ -163,12 +177,12 @@ Allynet ?</h1>
         <div className="big-image2-container">
           <img src={hero2} alt="Hero background" className="big-bg2" />
           <div className="hero2-content">
-  <h1 className="hero2-title">
-    Meet ALLYNET, the first platform that combines verified mentorship, 
-    <span className="half-title"> clear career roadmaps, and gamified learning — built to help students grow faster with the right guidance.</span>
-  </h1>
-  <a href="#signup" className="hero2-button">Get Started</a>
-</div>
+            <h1 className="hero2-title">
+              Meet ALLYNET, the first platform that combines verified mentorship,
+              <span className="half-title"> clear career roadmaps, and gamified learning — built to help students grow faster with the right guidance.</span>
+            </h1>
+            <a href="#signup" className="hero2-button">Get Started</a>
+          </div>
         </div>
       </section>
 
