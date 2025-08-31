@@ -249,7 +249,6 @@
   display: flex;
   max-width: 81.81%;
   margin: 0 auto 50px auto;
-  grid-template-columns: 42.6 57.4;
   gap: 4.3%;
 }
 .left-part {
@@ -260,6 +259,9 @@
   
 }
 .left-part h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
   max-width: 60%; 
   word-wrap: break-word; 
   margin: 0;
@@ -383,3 +385,80 @@
   justify-content: center;
   text-decoration: none;
 }
+.faq-section {
+  display: flex;
+  margin: 100px auto 100px auto ;
+  max-width: 90.84%;
+  align-items: center;
+  gap: 10px;
+  }
+.button+arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.faq-button {
+  display: flex;
+  align-items: center;
+  width: 9rem;
+  
+  
+  height: 2.1875rem;
+  background-color: #000;
+  border: 1px solid #A7A7A7;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.arrowleft {
+  
+  margin-left: 8px;
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+}
+.left-text {
+  font-family: 'inter',sans-serif;
+  font-size: 1rem;
+  font-weight: 600px;
+  text-align: left;
+  color: #A7A7A7;
+  /*white-space: normal;*/ 
+}
+.left-text .left-text2 {
+  color: #000000;
+}
+.question {
+  display: flex;
+  }
+
+.faqs p {
+  font-family: 'inter',sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  max-width: none;
+  text-align: left;
+  color: #000000;
+  white-space: nowrap;
+  margin: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px;
+  /*min-width: 430px;*/
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #A2A2A2;
+  box-sizing: border-box;
+  border-radius: 15px;
+  gap: 10px;
+  }

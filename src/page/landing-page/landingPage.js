@@ -13,8 +13,10 @@ import mind_map from './assets/mind_map.png';
 import robot_2_fill from './assets/robot_2_fill.png';
 import medal_fill from './assets/medal_fill.png';
 import career_roadmap from './assets/career_roadmap.png';
-import mentorship from './assets/mentorship.png'
-import gamification from './assets/gamification.png'
+import mentorship from './assets/mentorship.png';
+import gamification from './assets/gamification.png';
+import arrowleft from './assets/arrowleft.png';
+import arrowdown from './assets/arrowdown.png';
 
 function LandingPage() {
   const bigImgConfig = { width: 1478, height: 834 };
@@ -36,14 +38,11 @@ function LandingPage() {
   return (
     <div className="landing-parent">
 
-      {/* Navbar Section */}
       <section className="navbar-section">
         <div className="navbar-card">
           <div className="logo-text">ALLYNET</div>
-
           <div className="menu-links">
             <a href="#home" className="menu-item">Home</a>
-
             <div className="menu-item dropdown">
               Feature
               <img src={arrowIcon} alt="" className="arrow-icon" />
@@ -52,7 +51,6 @@ function LandingPage() {
                 <a href="#feature2">Feature 2</a>
               </div>
             </div>
-
             <div className="menu-item dropdown">
               Community
               <img src={arrowIcon} alt="" className="arrow-icon" />
@@ -61,19 +59,15 @@ function LandingPage() {
                 <a href="#events">Events</a>
               </div>
             </div>
-
             <a href="#about" className="menu-item">About Us</a>
           </div>
-
           <a href="#signup" className="navbutton">Join for Free</a>
         </div>
       </section>
 
-      {/* Hero Section */}
       <section className="hero-section">
         <div className="big-image-container">
           <img src={heroimg} alt="Hero background" className="big-bg" />
-
           {smallImages.map((img, idx) => (
             <img
               key={idx}
@@ -88,14 +82,12 @@ function LandingPage() {
               }}
             />
           ))}
-
           <div className="hero-content">
             <h1 className="hero-title">Mentorship, Roadmaps & Growth</h1>
             <p className="hero-subtitle">All In One Place</p>
             <a href="#signup" className="hero-button">Get Started</a>
           </div>
         </div>
-
         <div className="next-section">
           <p className="next-text">
             <span className="quotes">“”</span>
@@ -104,71 +96,106 @@ function LandingPage() {
           </p>
         </div>
       </section>
+
       <section className="whyus">
-        <div class="left-part">
-          <h1 class="heading">Why Choose 
-Allynet ?</h1>
-<p class="subheading">From mentorship to roadmaps — we’ve got you covered with all or your problems in one place and with single click</p>
+        <div className="left-part">
+          <h1 className="heading">Why Choose Allynet?</h1>
+          <p className="subheading">From mentorship to roadmaps — we’ve got you covered with all your problems in one place with a single click.</p>
         </div>
-        <div class="right-part">
+        <div className="right-part">
           <div className="cards">
-            <img src={user_follow} alt="card1"/>
+            <img src={user_follow} alt="Verified Mentorship" />
             <h1>Verified Mentorship</h1>
-            <p>Connect with verified alumni & seniors who guide you with real experience — not random advice</p>
+            <p>Connect with verified alumni & seniors who guide you with real experience — not random advice.</p>
           </div>
           <div className="cards">
-            <img src={mind_map} alt="card2"/>
+            <img src={mind_map} alt="Career Roadmap" />
             <h2>Career Roadmap</h2>
             <p>Follow step-by-step roadmaps for placements, higher studies, and exams with curated notes & guides.</p>
           </div>
           <div className="cards">
-            <img src={robot_2_fill} alt="card3"/>
+            <img src={robot_2_fill} alt="AI Mentor Match" />
             <h3>AI Mentor Match</h3>
-            <p>Our AI instantly matches you with the best mentor based on your interests, skills, and goals</p>
-            </div>
-            <div className="cards">
-              <img src={medal_fill} alt="card3"/>
-              <h4>Gamified Learning</h4>
-              <p>Stay motivated with badges, rewards, and leaderboards while learning and sharing knowledge.</p>
-            </div>
-          
+            <p>Our AI instantly matches you with the best mentor based on your interests, skills, and goals.</p>
+          </div>
+          <div className="cards">
+            <img src={medal_fill} alt="Gamified Learning" />
+            <h4>Gamified Learning</h4>
+            <p>Stay motivated with badges, rewards, and leaderboards while learning and sharing knowledge.</p>
+          </div>
         </div>
       </section>
+
       <section className="syct">
         <div className="heading">Share Your Career Today</div>
         <div className="cards2container">
           <div className="cards2">
-          <img src={mentorship} alt="card1"/>
-          <p>Get mentorship from verified alumni anytime, anywhere</p>
-          <h1>Mentorship</h1>
+            <img src={mentorship} alt="Mentorship" />
+            <p>Get mentorship from verified alumni anytime, anywhere.</p>
+            <h1>Mentorship</h1>
           </div>
           <div className="cards2">
-          <img src={career_roadmap} alt="card2"/>
-          <p>Follow structured roadmaps for placements & higher studies</p>
-          <h2>Career Roadmap</h2>
+            <img src={career_roadmap} alt="Career Roadmap" />
+            <p>Follow structured roadmaps for placements & higher studies.</p>
+            <h2>Career Roadmap</h2>
           </div>
           <div className="cards2">
-          <img src={gamification} alt="card3"/>
-          <p>Stay motivated with badges, rewards & leaderboards</p>
-          <h3>Gamification</h3>
+            <img src={gamification} alt="Gamification" />
+            <p>Stay motivated with badges, rewards & leaderboards.</p>
+            <h3>Gamification</h3>
           </div>
         </div>
-        <a href="#signup" className="hero-button-black">GetStarted</a>
-        
-        
+        <a href="#signup" className="hero-button-black">Get Started</a>
       </section>
 
-      {/* Hero2 Section */}
       <section className="hero2-section">
         <div className="big-image2-container">
           <img src={hero2} alt="Hero background" className="big-bg2" />
           <div className="hero2-content">
-  <h1 className="hero2-title">
-    Meet ALLYNET, the first platform that combines verified mentorship, 
-    <span className="half-title"> clear career roadmaps, and gamified learning — built to help students grow faster with the right guidance.</span>
-  </h1>
-  <a href="#signup" className="hero2-button">Get Started</a>
-</div>
+            <h1 className="hero2-title">
+              Meet ALLYNET, the first platform that combines verified mentorship, 
+              <span className="half-title"> clear career roadmaps, and gamified learning — built to help students grow faster with the right guidance.</span>
+            </h1>
+            <a href="#signup" className="hero2-button">Get Started</a>
+          </div>
+        </div>
+      </section>
+
+      <section className="faq-section">
+        <div className="left-section">
+          <div className="left-text">
+            <h1>We believe in the power of guidance. To help you out, we provide
+              <span className="left-text2"> free mentorship Q&A sessions with our alumni </span>
+            </h1>
+          </div>
+          <div className="button+arrow">
+            <a href="#signup" className="faq-button">
+              Get Started
+              <img src={arrowleft} alt="" className="arrowleft" />
+            </a>
+          </div>
+        </div>
+        <div className="faqs">
+          <div className="question">
+            <p>How does ALLYNET connect me with mentors?
+              <img src={arrowdown} alt="" className="arrowdown" />
+            </p>
+          </div>
+          <div className="question">
+            <p>Are the roadmaps verified by alumni?
+              <img src={arrowdown} alt="" className="arrowdown" />
+            </p>
+          </div>
+          <div className="question">
+            <p>Can I use ALLYNET offline?
+              <img src={arrowdown} alt="" className="arrowdown" />
+            </p>
+          </div>
+          <div className="question">
+            <p>Is mentorship free or paid?
+              <img src={arrowdown} alt="" className="arrowdown" />
+            </p>
+          </div>
         </div>
       </section>
 
