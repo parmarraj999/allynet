@@ -88,43 +88,7 @@ function LandingPage() {
             <a href="#signup" className="hero-button">Get Started</a>
           </div>
         </div>
-/*<<<<<<< HEAD
-        <div className="next-section">
-          <p className="next-text">
-            <span className="quotes">“”</span>
-            ALLYNET connects students with experienced alumni and mentors, offering clear career roadmaps and a supportive community. No more random resources — just trusted guidance, all in one place.
-            <span className="quotes">“”</span>
-          </p>
-        </div>
-      </section>
 
-      <section className="whyus">
-        <div className="left-part">
-          <h1 className="heading">Why Choose Allynet?</h1>
-          <p className="subheading">From mentorship to roadmaps — we’ve got you covered with all your problems in one place with a single click.</p>
-        </div>
-        <div className="right-part">
-          <div className="cards">
-            <img src={user_follow} alt="Verified Mentorship" />
-            <h1>Verified Mentorship</h1>
-            <p>Connect with verified alumni & seniors who guide you with real experience — not random advice.</p>
-          </div>
-          <div className="cards">
-            <img src={mind_map} alt="Career Roadmap" />
-            <h2>Career Roadmap</h2>
-            <p>Follow step-by-step roadmaps for placements, higher studies, and exams with curated notes & guides.</p>
-          </div>
-          <div className="cards">
-            <img src={robot_2_fill} alt="AI Mentor Match" />
-            <h3>AI Mentor Match</h3>
-            <p>Our AI instantly matches you with the best mentor based on your interests, skills, and goals.</p>
-          </div>
-          <div className="cards">
-            <img src={medal_fill} alt="Gamified Learning" />
-            <h4>Gamified Learning</h4>
-            <p>Stay motivated with badges, rewards, and leaderboards while learning and sharing knowledge.</p>
-=======
-*/
       </section>
 
       <div className="next-section">
@@ -164,34 +128,11 @@ function LandingPage() {
               <p>Stay motivated with badges, rewards, and leaderboards while learning and sharing knowledge.</p>
             </div>
 
-/*>>>>>>> 60b055484fef5ed0cdbdeedfbf54f3ae135e069c
- */         </div>
+         </div>
         </div>
       </section>
 
-/*<<<<<<< HEAD
-      <section className="syct">
-        <div className="heading">Share Your Career Today</div>
-        <div className="cards2container">
-          <div className="cards2">
-            <img src={mentorship} alt="Mentorship" />
-            <p>Get mentorship from verified alumni anytime, anywhere.</p>
-            <h1>Mentorship</h1>
-          </div>
-          <div className="cards2">
-            <img src={career_roadmap} alt="Career Roadmap" />
-            <p>Follow structured roadmaps for placements & higher studies.</p>
-            <h2>Career Roadmap</h2>
-          </div>
-          <div className="cards2">
-            <img src={gamification} alt="Gamification" />
-            <p>Stay motivated with badges, rewards & leaderboards.</p>
-            <h3>Gamification</h3>
-          </div>
-        </div>
-        <a href="#signup" className="hero-button-black">Get Started</a>
-=======
-*/
+
       <section className="syct">
         <div className="heading">Share Your Career Today</div>
         <div className="cards2container">
@@ -223,20 +164,16 @@ function LandingPage() {
         <a href="#signup" className="hero-button-black">GetStarted</a>
 
 
-/*>>>>>>> 60b055484fef5ed0cdbdeedfbf54f3ae135e069c
-  */    </section>
+    </section>
 
       <section className="hero2-section">
         <div className="big-image2-container">
           <img src={hero2} alt="Hero background" className="big-bg2" />
           <div className="hero2-content">
             <h1 className="hero2-title">
-/*<<<<<<< HEAD
-              Meet ALLYNET, the first platform that combines verified mentorship, 
-=======*/
+
               Meet ALLYNET, the first platform that combines verified mentorship,
-/*>>>>>>> 60b055484fef5ed0cdbdeedfbf54f3ae135e069c
-  */            <span className="half-title"> clear career roadmaps, and gamified learning — built to help students grow faster with the right guidance.</span>
+            <span className="half-title"> clear career roadmaps, and gamified learning — built to help students grow faster with the right guidance.</span>
             </h1>
             <a href="#signup" className="hero2-button">Get Started</a>
           </div>
