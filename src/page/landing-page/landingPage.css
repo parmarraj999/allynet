@@ -244,3 +244,39 @@
 .hero2-title .half-title {
   color: rgba(255, 255, 255, 0.48);
 }
+
+.whyus {
+  display: flex;
+  max-width: 81.81%;
+  margin: 0 auto 50px auto;
+  grid-template-columns: 42.6 57.4;
+  gap: 4.3%;
+}
+.left-part {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.left-part h1 {
+  max-width: 60%; 
+  word-wrap: break-word; 
+  margin: 0;
+}
+.left-part p {
+  margin: 20px 0 0 0;
+}
+.right-part {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.cards {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  text-align: left;
+  
+  padding: 15px;
+  
+}

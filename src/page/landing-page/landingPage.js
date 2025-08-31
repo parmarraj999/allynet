@@ -8,6 +8,10 @@ import heroavatars from './assets/heroavatars.png';
 import heroarrow from './assets/heroarrow.png';
 import herotick from './assets/herotick.png';
 import hero2 from './assets/hero2.png';
+import user_follow from './assets/user_follow.png';
+import mind_map from './assets/mind_map.png';
+import robot_2_fill from './assets/robot_2_fill.png';
+import medal_fill from './assets/medal_fill.png';
 
 function LandingPage() {
   const bigImgConfig = { width: 1478, height: 834 };
@@ -95,6 +99,36 @@ function LandingPage() {
             ALLYNET connects students with experienced alumni and mentors, offering clear career roadmaps and a supportive community. No more random resources — just trusted guidance, all in one place.
             <span className="quotes">“”</span>
           </p>
+        </div>
+      </section>
+      <section className="whyus">
+        <div class="left-part">
+          <h1 class="heading">Why Choose 
+Allynet ?</h1>
+<p class="subheading">From mentorship to roadmaps — we’ve got you covered with all or your problems in one place and with single click</p>
+        </div>
+        <div class="right-part">
+          <div className="cards">
+            <img src={user_follow} alt="card1"/>
+            <h1>Verified Mentorship</h1>
+            <p>Connect with verified alumni & seniors who guide you with real experience — not random advice</p>
+          </div>
+          <div className="cards">
+            <img src={mind_map} alt="card2"/>
+            <h2>Career Roadmap</h2>
+            <p>Follow step-by-step roadmaps for placements, higher studies, and exams with curated notes & guides.</p>
+          </div>
+          <div className="cards">
+            <img src={robot_2_fill} alt="card3"/>
+            <h3>AI Mentor Match</h3>
+            <p>Our AI instantly matches you with the best mentor based on your interests, skills, and goals</p>
+            </div>
+            <div className="cards">
+              <img src={medal_fill} alt="card3"/>
+              <h4>Gamified Learning</h4>
+              <p4>Stay motivated with badges, rewards, and leaderboards while learning and sharing knowledge.</p4>
+            </div>
+          
         </div>
       </section>
 
