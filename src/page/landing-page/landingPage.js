@@ -12,6 +12,9 @@ import user_follow from './assets/user_follow.png';
 import mind_map from './assets/mind_map.png';
 import robot_2_fill from './assets/robot_2_fill.png';
 import medal_fill from './assets/medal_fill.png';
+import career_roadmap from './assets/career_roadmap.png';
+import mentorship from './assets/mentorship.png'
+import gamification from './assets/gamification.png'
 
 function LandingPage() {
   const bigImgConfig = { width: 1478, height: 834 };
@@ -126,10 +129,33 @@ Allynet ?</h1>
             <div className="cards">
               <img src={medal_fill} alt="card3"/>
               <h4>Gamified Learning</h4>
-              <p4>Stay motivated with badges, rewards, and leaderboards while learning and sharing knowledge.</p4>
+              <p>Stay motivated with badges, rewards, and leaderboards while learning and sharing knowledge.</p>
             </div>
           
         </div>
+      </section>
+      <section className="syct">
+        <div className="heading">Share Your Career Today</div>
+        <div className="cards2container">
+          <div className="cards2">
+          <img src={mentorship} alt="card1"/>
+          <p>Get mentorship from verified alumni anytime, anywhere</p>
+          <h1>Mentorship</h1>
+          </div>
+          <div className="cards2">
+          <img src={career_roadmap} alt="card2"/>
+          <p>Follow structured roadmaps for placements & higher studies</p>
+          <h2>Career Roadmap</h2>
+          </div>
+          <div className="cards2">
+          <img src={gamification} alt="card3"/>
+          <p>Stay motivated with badges, rewards & leaderboards</p>
+          <h3>Gamification</h3>
+          </div>
+        </div>
+        <a href="#signup" className="hero-button-black">GetStarted</a>
+        
+        
       </section>
 
       {/* Hero2 Section */}
