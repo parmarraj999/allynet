@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './landingPage.css';
 import arrowIcon from './assets/arrow1.png';
 import heroimg from './assets/heroimg.png';
@@ -62,7 +63,7 @@ function LandingPage() {
             </div>
             <a href="#about" className="menu-item">About Us</a>
           </div>
-          <a href="#signup" className="navbutton">Join for Free</a>
+          <Link to='/login' className="navbutton">Join for Free</Link>
         </div>
       </section>
 
