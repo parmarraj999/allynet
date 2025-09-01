@@ -386,8 +386,6 @@
   font-size: 18px;
   font-weight: 600;
 }
-
-
 .hero-button-black {
  background: black;
  padding: .8rem 2rem;
@@ -474,3 +472,74 @@
   border-radius: 15px;
   gap: 10px;
   }
+.footer {
+  background-color: black;
+  margin: 20px;
+  border-radius: 40px;
+  padding: 60px 50px 30px 50px;
+}
+.footermain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #6B6B6B;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3px;
+  gap: 10px;
+  
+  }
+.icons img {
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  }
+.quicklinks {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #6B6B6B;
+  text-decoration: none;
+}
+.resources {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #6B6B6B;
+  text-decoration: none;
+}
+.legal {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #6B6B6B;
+  text-decoration: none;
+}
+.footer h  {
+  color: white;
+}
+.logo2 {
+  color: white;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 3px;
+  
+}
+.allynet h4 {
+  text-align: left;
+  margin: 0px 0 3px 0;
+}
+
+
+.footer p {
+  color: white;
+}
+.footermid h3 {
+  color: #6B6B6B;
+  margin: 100px auto 150px auto;
+  font-size: 1rem;
+  text-align: left;
+}

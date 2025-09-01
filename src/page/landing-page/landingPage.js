@@ -17,6 +17,7 @@ import mentorship from './assets/mentorship.png';
 import gamification from './assets/gamification.png';
 import arrowleft from './assets/arrowleft.png';
 import arrowdown from './assets/arrowdown.png';
+import instagram from './assets/instagram.png';
 
 function LandingPage() {
   const bigImgConfig = { width: 1478, height: 834 };
@@ -161,7 +162,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <a href="#signup" className="hero-button-black">GetStarted</a>
+        <a href="#signup" className="hero-button-black">Get Started</a>
 
 
     </section>
@@ -218,6 +219,57 @@ function LandingPage() {
           </div>
         </div>
       </section>
+      <section className="footer-section">
+        <div className="footer">
+          <div className="footermain">
+            <div className="allynet">
+             <div className="logo2">ALLYNET</div>
+            <h4>Your Ally in Career Growth</h4>
+              <div className="icons">
+              <a href="#instagram">
+  <img src={instagram} alt="Instagram"/>
+</a>
+              <a href="https://instagram.com">
+  <img src={instagram} alt="Instagram" />
+</a>
+              <a href="https://instagram.com">
+  <img src={instagram} alt="Instagram" />
+</a>
+              <a href="https://instagram.com">
+  <img src={instagram} alt="Instagram" />
+</a>
+              </div>
+            </div>
+            <div className="quicklinks">
+              <h>Quick Links</h>
+              <a href="#home" className="quicklinks">Home</a>
+              <a href="#feature" className="quicklinks">Feature</a>
+              <a href="#howitworks" className="quicklinks">How it Works</a>
+              <a href="#pricing" className="quicklinks">Pricing</a>
+              <a href="#faq" className="quicklinks">FAQ</a>
+              <a href="#contact" className="quicklinks">Contact</a>
+            </div>
+            <div className="resources">
+              <h>Resources</h>
+              <a href="#roadmap" className="resources">Roadmap</a>
+              <a href="#mentorship" className="resources">Mentorship</a>
+              <a href="#community" className="resources">Community</a>
+              <a href="#e-library" className="resources">e-resources</a>
+            </div>
+            <div className="legal">
+              <h>Legal</h>
+              <a href="#privacypolicy" className="legal">Privacy Policy</a>
+              <a href="#termsofservice" className="legal">Terms of Services</a>
+            </div>
+          </div>
+        <div className="footermid">
+          <h3>“ALLYNET connects students with experienced alumni and mentors, offering clear career roadmaps and a supportive community. No more random resources — just trusted guidance, all in one place. “”</h3>
+        </div>
+        <div className="footerbottom">
+          <h>© 2025 ALLYNET. All rights reserved</h>
+        </div>
+      </div>
+    </section>
 
     </div>
   );
