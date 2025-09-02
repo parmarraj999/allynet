@@ -5,8 +5,9 @@ import './loginPage.css';
 
 function LoginPage() {
   return (
-    <div className="login-wrapper">
-    <section className="logincard">
+    
+    
+    <section className="login-wrapper">
       <div className="left-section">
         <h1>Welcome To Allynet</h1>
         <div className="inputs">
@@ -21,14 +22,15 @@ function LoginPage() {
           <Link to='/Sign-up' className="button2">Create New  Account</Link>
         </div>
       </div>
-      <div className="right-section">
+       <div className="right-section">
         <img src={login} alt=""/>
         
-      </div>
+       </div>
+      
       
     
     </section>
-    </div>
+    
   )
 }
 

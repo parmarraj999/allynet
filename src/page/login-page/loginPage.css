@@ -1,72 +1,70 @@
-
-.logincard {
+.login-wrapper {
+  background-color: black;
   display: flex;
   flex-direction: row;
-  background-color: black;
+  min-height: 100vh;
+  width: 100%;
 }
-.left-section  {
+
+.left-section {
   color: white;
   justify-content: center;
-  width: 79.37%;
+  width: 59.37%;
 }
+
 .left-section h1 {
   font-size: 2rem;
   font-weight: 600;
+  margin: 1px 0;
 }
+
 .right-section {
-  width: 20.63%;
-  margin: 20px 40px;
+  width: 40.63%;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-section img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .inputs {
   display: flex;
   flex-direction: column;
-  
 }
-.input1 {
-  box-sizing: border-box;
-  background-color: transparent;
-  border: 2px solid #6C6C6C;
-  color: #6C6C6C;
-  border-radius: 40px;
-  font-size: 1.125rem;
-  padding: 20px;
-  margin: 50px 100px 10px 100px;
-}
+
+.input1,
 .input2 {
   box-sizing: border-box;
   background-color: transparent;
-  border: 2px solid #6C6C6C;
-  color: #6C6C6C;
+  border: 2px solid #6c6c6c;
+  color: #6c6c6c;
   border-radius: 40px;
   font-size: 1.125rem;
   padding: 20px;
+}
+
+.input1 {
+  margin: 50px 100px 10px 100px;
+}
+
+.input2 {
   margin: 10px 100px;
 }
+
 .buttons {
   display: flex;
   flex-direction: column;
 }
-.button1 {
-  box-sizing: border-box;
-  display: flex;
-  background-color: #D9D9D9;
-  border: 2px solid #FFFFFF;
-  color: #000000;
-  border-radius: 40px;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.125rem;
-  padding: 20px;
-  margin: 10px 100px;
-  }
+
+.button1,
 .button2 {
   box-sizing: border-box;
   display: flex;
-  background-color: transparent;
-  border: 2px solid #FFFFFF;
-  color: #ffffff;
   border-radius: 40px;
   text-decoration: none;
   align-items: center;
@@ -74,8 +72,58 @@
   font-size: 1.125rem;
   padding: 20px;
   margin: 10px 100px;
-  }
+}
+
+.button1 {
+  background-color: #d9d9d9;
+  border: 2px solid #ffffff;
+  color: #000000;
+}
+
+.button2 {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
 .forget-password {
   text-align: right;
   margin: 0 120px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: auto;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .right-section img {
+    height: 200px;
+    width: auto;
+    max-width: 90%;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .input1,
+  .input2,
+  .button1,
+  .button2,
+  .forget-password {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
