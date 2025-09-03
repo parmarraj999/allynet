@@ -52,7 +52,7 @@ function LandingPage() {
 
       <section className="hero-section">
         <div className="big-image-container">
-          <img src='../../../../assets/heroimg.png' alt="Hero background" className="big-bg" />
+          <img src='/assets/heroimg.png' alt="Hero background" className="big-bg" />
 
           {smallImages.map((img, idx) => (
             <img
@@ -123,7 +123,7 @@ function LandingPage() {
         <div className="heading">Share Your Career Today</div>
         <div className="cards2container">
           <div className="card2">
-            <img src='../../../../assets/mentorship.png ' alt="card1" />
+            <img src='/assets/mentorship.png ' alt="card1" />
             <p>Get mentorship from verified alumni anytime, anywhere</p>
             <div className='card-btn' >
               <div className='dot red-dot'></div>
@@ -131,7 +131,7 @@ function LandingPage() {
             </div>
           </div>
           <div className="card2">
-            <img src='../../../../assets/career_roadmap.png' alt="card2" />
+            <img src='/assets/career_roadmap.png' alt="card2" />
             <p>Follow structured roadmaps for placements & higher studies</p>
             <div className='card-btn' >
               <div className='dot green-dot'></div>
@@ -139,7 +139,7 @@ function LandingPage() {
             </div>
           </div>
           <div className="card2">
-            <img src='../../../../assets/gamification.png' alt="card3" />
+            <img src='/assets/gamification.png' alt="card3" />
             <p>Stay motivated with badges, rewards & leaderboards</p>
             <div className='card-btn' >
               <div className='dot blue-dot'></div>
