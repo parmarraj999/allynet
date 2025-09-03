@@ -6,9 +6,12 @@
 
 .navbar-card {
   display: flex;
+  position: fixed;
+  top: 25;
+  z-index: 1000;
   justify-content: space-between;
   align-items: center;
-  width: 64.2%;
+  width: 66.2%;
   padding: 0.5rem 1rem;
   background-color: black;
   border-radius: 10px;
@@ -78,7 +81,8 @@
 }
 
 .navbutton {
-  margin-left: auto;
+  margin-left: 10px;
+  
   padding: 0.5rem 1.2rem;
   background-color: #2B2B2B;
   border: 1px solid #A7A7A7;
@@ -95,7 +99,7 @@
 }
 
 .big-image-container {
-  margin: 0 34px;
+  margin: 50px 34px 0px 34px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,6 +267,7 @@
 
 .whyus {
   display: flex;
+
   height: 100vh;
   display: flex;
   align-items: center;
@@ -285,6 +290,7 @@
 }
 
 .left-part h1 {
+
   word-wrap: break-word;
   margin: 0;
   font-size: 2rem;
@@ -422,4 +428,161 @@
   font-weight: 600;
   color: white;
   cursor: pointer;
+}
+.faq-section {
+  display: flex;
+  margin: 100px auto 100px auto ;
+  max-width: 90.84%;
+  align-items: center;
+  gap: 10px;
+  }
+.button+arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.faq-button {
+  display: flex;
+  align-items: center;
+  width: 9rem;
+  height: 2.1875rem;
+  background-color: #000;
+  border: 1px solid #A7A7A7;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.arrowleft {
+  
+  margin-left: 8px;
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+}
+.left-text {
+  font-family: 'inter',sans-serif;
+  font-size: 1rem;
+  font-weight: 600px;
+  text-align: left;
+  color: #A7A7A7;
+  /*white-space: normal;*/ 
+}
+.left-text .left-text2 {
+  color: #000000;
+}
+.question {
+  display: flex;
+  }
+
+.faqs p {
+  font-family: 'inter',sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  max-width: none;
+  text-align: left;
+  color: #000000;
+  white-space: nowrap;
+  margin: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px;
+  /*min-width: 430px;*/
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #A2A2A2;
+  box-sizing: border-box;
+  border-radius: 15px;
+  gap: 10px;
+  }
+.footer {
+  background-color: black;
+  margin: 20px;
+  border-radius: 40px;
+  padding: 60px 50px 30px 50px;
+}
+.footermain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #6B6B6B;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3px;
+  gap: 10px;
+  
+  }
+.icons img {
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  }
+.quicklinks {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #6B6B6B;
+  text-decoration: none;
+}
+.resources {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #6B6B6B;
+  text-decoration: none;
+}
+.legal {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #6B6B6B;
+  text-decoration: none;
+}
+.footer h  {
+  color: white;
+}
+.logo2 {
+  color: white;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 3px;
+  
+}
+.allynet h4 {
+  text-align: left;
+  margin: 0px 0 3px 0;
+}
+
+
+.footer p {
+  color: white;
+}
+.footermid h3 {
+  color: #6B6B6B;
+  margin: 100px auto 150px auto;
+  font-size: 1rem;
+  text-align: left;
+}
+/*added this cuz two random box appeared*/
+.menu-item {
+  display: inline-flex;  
+  white-space: nowrap;   
+}
+.menu-item,
+.menu-item * {
+  outline: none !important;
+  border: none !important;
+  background: transparent !important;
 }

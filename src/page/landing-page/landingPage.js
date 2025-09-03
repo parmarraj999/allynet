@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './landingPage.css';
 
 
@@ -22,14 +23,11 @@ function LandingPage() {
   return (
     <div className="landing-parent">
 
-      {/* Navbar Section */}
       <section className="navbar-section">
         <div className="navbar-card">
           <div className="logo-text">ALLYNET</div>
-
           <div className="menu-links">
             <a href="#home" className="menu-item">Home</a>
-
             <div className="menu-item dropdown">
               Feature
               <svg style={{ width: '20px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
@@ -38,7 +36,6 @@ function LandingPage() {
                 <a href="#feature2">Feature 2</a>
               </div>
             </div>
-
             <div className="menu-item dropdown">
               Community
               <svg style={{ width: '20px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
@@ -47,15 +44,12 @@ function LandingPage() {
                 <a href="#events">Events</a>
               </div>
             </div>
-
             <a href="#about" className="menu-item">About Us</a>
           </div>
-
-          <a href="#signup" className="navbutton">Join for Free</a>
+          <Link to='/login' className="navbutton">Join for Free</Link>
         </div>
       </section>
 
-      {/* Hero Section */}
       <section className="hero-section">
         <div className="big-image-container">
           <img src='../../../../assets/heroimg.png' alt="Hero background" className="big-bg" />
@@ -74,13 +68,13 @@ function LandingPage() {
               }}
             />
           ))}
-
           <div className="hero-content">
             <h1 className="hero-title">Mentorship, Roadmaps & Growth</h1>
             <p className="hero-subtitle">All In One Place</p>
-            <a href="#signup" className="hero-button">Get Started</a>
+            <Link to='/login' className="hero-button">Get Started</Link>
           </div>
         </div>
+
       </section>
 
       <div className="next-section">
@@ -120,7 +114,7 @@ function LandingPage() {
               <p>Stay motivated with badges, rewards, and leaderboards while learning and sharing knowledge.</p>
             </div>
 
-          </div>
+         </div>
         </div>
       </section>
 
@@ -156,7 +150,7 @@ function LandingPage() {
         <a href="#signup" className="hero-button-black">Get Started</a>
 
 
-      </section>
+    </section>
 
       {/* Hero2 Section */}
       {/* <section className="hero2-section">
@@ -164,8 +158,9 @@ function LandingPage() {
           <img src={hero2} alt="Hero background" className="big-bg2" />
           <div className="hero2-content">
             <h1 className="hero2-title">
+
               Meet ALLYNET, the first platform that combines verified mentorship,
-              <span className="half-title"> clear career roadmaps, and gamified learning — built to help students grow faster with the right guidance.</span>
+            <span className="half-title"> clear career roadmaps, and gamified learning — built to help students grow faster with the right guidance.</span>
             </h1>
             <a href="#signup" className="hero-button">Get Started</a>
           </div>
