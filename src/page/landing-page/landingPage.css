@@ -6,6 +6,9 @@
 
 .navbar-card {
   display: flex;
+  position: fixed;
+  top: 25;
+  z-index: 1000;
   justify-content: space-between;
   align-items: center;
   width: 66.2%;
@@ -96,7 +99,7 @@
 }
 
 .big-image-container {
-  margin: 0 34px;
+  margin: 50px 34px 0px 34px;
   display: flex;
   justify-content: center;
   align-items: center;
