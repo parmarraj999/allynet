@@ -87,7 +87,7 @@ function LandingPage() {
           <div className="hero-content">
             <h1 className="hero-title">Mentorship, Roadmaps & Growth</h1>
             <p className="hero-subtitle">All In One Place</p>
-            <a href="#signup" className="hero-button">Get Started</a>
+            <Link to='/login' className="hero-button">Get Started</Link>
           </div>
         </div>
 
@@ -163,7 +163,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <a href="#signup" className="hero-button-black">Get Started</a>
+        <Link to='/login' className="hero-button-black">Get Started</Link>
 
 
     </section>
@@ -177,7 +177,7 @@ function LandingPage() {
               Meet ALLYNET, the first platform that combines verified mentorship,
             <span className="half-title"> clear career roadmaps, and gamified learning — built to help students grow faster with the right guidance.</span>
             </h1>
-            <a href="#signup" className="hero2-button">Get Started</a>
+            <Link to='/login' className="hero2-button">Get Started</Link>
           </div>
 
         </div>
@@ -191,10 +191,10 @@ function LandingPage() {
             </h1>
           </div>
           <div className="button+arrow">
-            <a href="#signup" className="faq-button">
+            <Link to='/login' className="faq-button">
               Get Started
               <img src={arrowleft} alt="" className="arrowleft" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="faqs">

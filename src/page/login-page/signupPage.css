@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+}
+
+.login-wrapper {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  width: 59.37%;
+  padding: 40px 20px;
+}
+.blank-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+.blank-box {
+  width: 55%;
+  height: 10px;        
+  background-color: white;
+  border-radius: 8px; 
+  margin: 10px 2px 40px;   
+}
+
+.left-section h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1px 0;
+}
+
+.right-section {
+  width: 40.63%;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-section img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.input1 {
+  background-color: transparent;
+  border: 2px solid #6c6c6c;
+  color: #6c6c6c;
+  border-radius: 40px;
+  font-size: 1.125rem;
+  padding: 10px;
+  outline: none;
+  margin: 50px 100px 10px 100px;
+}
+
+.input2 {
+  background-color: transparent;
+  border: 2px solid #6c6c6c;
+  color: #6c6c6c;
+  border-radius: 40px;
+  font-size: 1.125rem;
+  padding: 10px;
+  outline: none;
+  margin: 10px 100px;
+}
+
+.input3 {
+  background-color: transparent;
+  border: 2px solid #6c6c6c;
+  color: #6c6c6c;
+  border-radius: 40px;
+  font-size: 1.125rem;
+  padding: 10px;
+  outline: none;
+  margin: 10px 100px 10px 100px;
+}
+/*.subinputs {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.subinput1 {
+  background-color: transparent;
+  border: 2px solid #6c6c6c;
+  color: #6c6c6c;
+  border-radius: 40px;
+  font-size: 1.125rem;
+  padding: 10px;
+  outline: none;
+  flex: 1 1 40%;
+}
+
+.year-input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  flex: 1 1 60%;
+}
+
+.subinput2 {
+  background-color: transparent;
+  border: 2px solid #6c6c6c;
+  color: #6c6c6c;
+  border-radius: 40px;
+  font-size: 1.125rem;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  padding-right: 44px; 
+}
+
+
+.year-input-wrapper .arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #6c6c6c;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 6px;
+}
+*/
+.subinputs {
+  display: flex;
+  gap: 16px;       /* space between Branch and Year */
+  align-items: center;
+  margin: 10px 100px; /* same horizontal margin as other inputs/buttons */
+}
+
+.subinput1 {
+  flex: 1;
+  background-color: transparent;
+  border: 2px solid #6c6c6c;
+  color: #6c6c6c;
+  border-radius: 40px;
+  font-size: 1.125rem;
+  padding: 10px;
+  outline: none;
+  max-width: 50%;
+  
+}
+
+.year-input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.subinput2 {
+  width: 100%;
+  background-color: transparent;  /* remove white background */
+  border: 2px solid #6c6c6c;
+  color: #6c6c6c;
+  border-radius: 40px;
+  font-size: 1.125rem;
+  padding: 10px;
+  outline: none;
+  padding-right: 44px; /* space for arrow button */
+}
+
+.year-input-wrapper .arrow {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.year-input-wrapper .arrow img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 50%;
+  border: 1px solid #6c6c6c;
+  background: #000;
+  z-index: 1000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  padding: 10px 12px;
+  cursor: pointer;
+  display: block;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.dropdown-item:hover {
+  background: #222;
+}
+
+/* --- Buttons --- */
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.subbuttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button1 {
+  display: flex;
+  border-radius: 40px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  padding: 10px;
+  margin: 10px 100px;
+  background-color: #d9d9d9;
+  border: 2px solid #ffffff;
+  color: #000000;
+}
+
+.subbutton1 {
+  display: flex;
+  border-radius: 40px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  padding: 10px  57px;
+  margin: 10px 10px 10px 100px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.subbutton2 {
+  display: flex;
+  border-radius: 40px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  padding: 10px 57px;
+  margin:10px 100px 10px 10px;
+  
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.forget-password {
+  text-align: right;
+  margin: 0 120px;
+}
+
+/* --- Responsive (Mobile) --- */
+@media (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: auto;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .right-section img {
+    height: 200px;
+    width: auto;
+    max-width: 90%;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .input1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .input2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .input3 {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .button1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subinputs {
+    flex-direction: column;
+    
+  }
+
+  .input1 {
+    margin: 16px auto;
+    width: 40%;
+    padding: 10px;
+  }
+
+  .input2 {
+    margin: 16px auto;
+    width: 40%;
+    padding: 10px;
+  }
+
+  .input3 {
+    margin: 16px auto;
+    width: 40%;
+    padding: 10px;
+  }
+
+  .button1 {
+    margin: 12px auto;
+    width: 90%;
+  }
+  }
+  
