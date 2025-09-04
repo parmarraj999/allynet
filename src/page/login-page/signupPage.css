@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 .login-wrapper {
   background-color: black;
   display: flex;
@@ -18,11 +14,11 @@
   width: 59.37%;
   padding: 40px 20px;
 }
+
 .blank-container {
   display: flex;
-  flex-direction: row;
-  
 }
+
 .blank-box {
   width: 55%;
   height: 10px;        

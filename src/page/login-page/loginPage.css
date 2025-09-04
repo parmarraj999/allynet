@@ -1,92 +1,101 @@
 .login-wrapper {
   background-color: black;
   display: flex;
-  flex-direction: row;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
 }
 
-.left-section {
+.login-left {
   color: white;
-  justify-content: center;
-  width: 59.37%;
-}
-
-.left-section h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 1px 0;
-}
-
-.right-section {
-  width: 40.63%;
-  padding: 40px 20px;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.right-section img {
-  width: 100%;
-  height: auto;
+.login-left h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1px 0;
+}
+
+.left-login-container{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+
+.login-right {
+  width: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.login-right img {
+  height: 100%;
   object-fit: contain;
 }
 
-.inputs {
+/* Input wrapper */
+.login-inputs {
   display: flex;
+  gap: 1.5rem;
   flex-direction: column;
+  align-items: flex-end;
 }
 
-.input1,
-.input2 {
+/* Shared input style */
+.login-input {
+  width: 100%;
   box-sizing: border-box;
   background-color: transparent;
   border: 2px solid #6c6c6c;
   color: #6c6c6c;
   border-radius: 40px;
-  font-size: 1.125rem;
-  padding: 20px;
+  font-size: 18px;
+  padding: 0 1.5rem;
+  height: 55px;
 }
 
-.input1 {
-  margin: 50px 100px 10px 100px;
-}
-
-.input2 {
-  margin: 10px 100px;
-}
-
-.buttons {
+/* Buttons wrapper */
+.login-buttons {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
-.button1,
-.button2 {
+/* Shared button style */
+.login-btn {
   box-sizing: border-box;
   display: flex;
   border-radius: 40px;
   text-decoration: none;
   align-items: center;
   justify-content: center;
-  font-size: 1.125rem;
-  padding: 20px;
-  margin: 10px 100px;
+  font-size: 18px;
+  height: 55px;
 }
 
-.button1 {
+/* Primary login button */
+.login-btn-primary {
   background-color: #d9d9d9;
   border: 2px solid #ffffff;
   color: #000000;
 }
 
-.button2 {
+/* Secondary (create account) button */
+.login-btn-secondary {
   background-color: transparent;
   border: 2px solid #ffffff;
   color: #ffffff;
 }
 
-.forget-password {
+.login-forget {
   text-align: right;
   margin: 0 120px;
 }
@@ -104,13 +113,13 @@
     min-height: auto;
   }
 
-  .left-section,
-  .right-section {
+  .login-left,
+  .login-right {
     width: 100%;
     padding: 20px;
   }
 
-  .right-section img {
+  .login-right img {
     height: 200px;
     width: auto;
     max-width: 90%;
@@ -118,11 +127,9 @@
     margin: 0 auto;
   }
 
-  .input1,
-  .input2,
-  .button1,
-  .button2,
-  .forget-password {
+  .login-input,
+  .login-btn,
+  .login-forget {
     margin-left: auto;
     margin-right: auto;
   }

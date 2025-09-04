@@ -1,6 +1,5 @@
 import './App.css';
-import React from 'react';
-import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './page/landing-page/landingPage';
 import LoginPage from './page/login-page/loginPage';
 import SignupPage from './page/login-page/signupPage';
@@ -11,14 +10,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<LandingPage/>} />
+          <Route path='/' element={<LandingPage />} />
           <Route path='/login' element={
-            <LoginPage/>} />
+            <LoginPage />} />
           <Route path='/loginas' element={
-            <LoginasPage/>} />
-          <Route path='/Sign-up' element={<SignupPage/>} />
-          
-          }
+            <LoginasPage />} />
+          <Route path='/Sign-up' element={<SignupPage />} />
         </Routes>
       </BrowserRouter>
     </div>

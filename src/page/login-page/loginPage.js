@@ -19,24 +19,32 @@ function LoginPage() {
 
   return (
     <section className="login-wrapper">
-      <div className="left-section">
-        <h1>Welcome To Allynet</h1>
-        <div className="inputs">
-          <input className="input1" type="email" placeholder="Email" />
-          <input className="input2" type="password" placeholder="Password" />
-        </div>
-        <div className="forget-password">
-          <Link to='/forget-password' style={{ textDecoration: "none", cursor: "pointer" }}>
-            Forget Password?
-          </Link>
-        </div>
-        <div className="buttons">
-          <Link to='/Home' className="button1">Log In</Link>
-          <Link to='/loginas' className="button2">Create New Account</Link>
+      <div className="login-left">
+        <div className='left-login-container' >
+
+
+          <h1 className="login-title">Welcome To Allynet</h1>
+
+          <div className="login-inputs">
+            <input className="login-input" type="email" placeholder="Email" />
+            <input className="login-input" type="password" placeholder="Password" />
+            <a style={{color:"blue"}}>Foget Password ?</a>
+          </div>
+
+
+          <div className="login-buttons">
+            <Link to="/home" className="login-btn login-btn-primary">
+              Log In
+            </Link>
+            <Link to="/loginas" className="login-btn login-btn-secondary">
+              Create New Account
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="right-section">
-        <img src={login} alt="" />
+
+      <div className="login-right">
+        <img src={login} alt="login" className="login-image" />
       </div>
     </section>
   );

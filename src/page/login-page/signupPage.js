@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react'; 
-import login from './assets/login.png'; 
+import React, { useState, useRef, useEffect } from 'react';
+import login from './assets/login.png';
 import { Link } from 'react-router-dom';
 import './signupPage.css';
 import arrow2 from './assets/arrow2.png';
@@ -69,8 +69,8 @@ export default function SignupPage() {
     <section className="login-wrapper">
       <div className="left-section">
         <div className="blank-container">
-        <div className="blank-box"></div>
-        <div className="blank-box"></div>
+          <div className="blank-box"></div>
+          <div className="blank-box"></div>
         </div>
         <h1>Join Allynet As Student</h1>
         <div className="inputs">
@@ -112,17 +112,17 @@ export default function SignupPage() {
                 <div className="dropdown" role="listbox">
                   {years.map((option) => (
                     <div
-  key={option}
-  className="dropdown-item"
-  role="option"
-  aria-selected={year === option}
-  onMouseDown={(e) => {
-    e.preventDefault();
-    handleSelect(option);
-  }}
->
-  {option}
-</div>
+                      key={option}
+                      className="dropdown-item"
+                      role="option"
+                      aria-selected={year === option}
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+                        handleSelect(option);
+                      }}
+                    >
+                      {option}
+                    </div>
                   ))}
                 </div>
               )}
@@ -136,14 +136,14 @@ export default function SignupPage() {
           />
         </div>
 
-        
-        
+
+
         <div className="buttons">
-        <Link to="/Home" className="button1">Create New Account</Link>
-        <div className="subbuttons">
-        <Link to="/loginas" className="subbutton1">Back</Link>
-        <Link to="/login" className="subbutton2">Login</Link>
-        </div>
+          <Link to="/Home" className="button1">Create New Account</Link>
+          <div className="subbuttons">
+            <Link to="/loginas" className="subbutton1">Back</Link>
+            <Link to="/login" className="subbutton2">Login</Link>
+          </div>
         </div>
       </div>
       <div className="right-section">
