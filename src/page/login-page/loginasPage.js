@@ -1,5 +1,5 @@
 import React from 'react'
-import login from './assets/login.png';
+
 import { Link } from 'react-router-dom';
 import './loginasPage.css';
 
@@ -25,7 +25,7 @@ function LoginasPage() {
         </div>
       </div>
        <div className="right-section">
-        <img src={login} alt=""/>
+        <img src="/assets/login.png" alt=""/>
         
        </div>
       

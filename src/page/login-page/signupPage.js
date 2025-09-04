@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
-import login from './assets/login.png';
+import React, { useState, useRef, useEffect } from 'react'; 
+
 import { Link } from 'react-router-dom';
 import './signupPage.css';
-import arrow2 from './assets/arrow2.png';
+
 
 export default function SignupPage() {
   const [year, setYear] = useState('');
@@ -105,7 +105,7 @@ export default function SignupPage() {
                 aria-label="Toggle year dropdown"
                 onClick={() => setShowDropdown((s) => !s)}
               >
-                <img src={arrow2} alt="Dropdown arrow" />
+                <img src="/assets/arrow2.png" alt="Dropdown arrow" />
               </button>
 
               {showDropdown && (
@@ -147,7 +147,7 @@ export default function SignupPage() {
         </div>
       </div>
       <div className="right-section">
-        <img src={login} alt="" />
+        <img src="/assets/login.png" alt="" />
       </div>
     </section>
   );

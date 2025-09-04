@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import login from './assets/login.png';
+
 import { Link, useNavigate } from 'react-router-dom';
 import './loginPage.css';
 
@@ -42,9 +42,8 @@ function LoginPage() {
           </div>
         </div>
       </div>
-
-      <div className="login-right">
-        <img src={login} alt="login" className="login-image" />
+      <div className="right-section">
+        <img src="/assets/login.png" alt="login"/>
       </div>
     </section>
   );
