@@ -5,19 +5,28 @@ import LoginPage from './page/login-page/loginPage';
 import SignupPage from './page/login-page/signupPage';
 import LoginasPage from './page/login-page/loginasPage';
 import Main from './layout/main/main';
+import FeedPage from './page/feed-page/feedPage';
+import LibraryPage from './page/library-page/libraryPage';
+import AlumniPage from './page/alumni-page/alumniPage';
+import CoursePage from './page/course-page/coursePage';
+import EventPage from './page/event-page/eventPage';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<LandingPage />} />
-          <Route path='/login' element={
-            <LoginPage />} />
-          <Route path='/loginas' element={
-            <LoginasPage />} />
+          <Route path='/explore' element={<LandingPage />} />
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/loginas' element={<LoginasPage />} />
           <Route path='/Sign-up' element={<SignupPage />} />
-          <Route path='/home' element={<Main/>} />
+          <Route path='/' element={<Main />} >
+            <Route path='' element={<FeedPage/>} />
+            <Route path='/library' element={<LibraryPage/>} />
+            <Route path='/alumni' element={<AlumniPage/>} />
+            <Route path='/courses' element={<CoursePage/>} />
+            <Route path='/events' element={<EventPage/>} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

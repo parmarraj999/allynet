@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../navbar/navbar'
 import Sidenav from '../sidenav/sidebar'
 import './main.css'
+import { Outlet } from 'react-router-dom'
 
 function Main() {
   return (
@@ -10,7 +11,7 @@ function Main() {
       <div className='layout-wrapper' >
         <Sidenav/>
         <div className='main-container'>
-          main content
+         <Outlet/>
         </div>
       </div>
     </div>
