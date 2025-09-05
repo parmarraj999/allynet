@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../navbar/navbar'
-import Sidenav from '../sidenav/sidenav'
+import Sidenav from '../sidenav/sidebar'
+import './main.css'
 
 function Main() {
   return (
@@ -8,7 +9,7 @@ function Main() {
       <Navbar />
       <div className='layout-wrapper' >
         <Sidenav/>
-        <div>
+        <div className='main-container'>
           main content
         </div>
       </div>

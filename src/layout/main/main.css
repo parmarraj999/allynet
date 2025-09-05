@@ -1,5 +1,17 @@
-.layout-container{
+.layout-container {
     width: 100%;
     height: 100vh;
-    
+
+}
+
+.layout-wrapper {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+
+}
+
+.main-container {
+    width: 80%;
+    height: 100%;
 }
