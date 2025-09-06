@@ -33,7 +33,7 @@ function LoginPage() {
 
 
           <div className="login-buttons">
-            <Link to="/home" className="login-btn login-btn-primary">
+            <Link to="/" className="login-btn login-btn-primary">
               Log In
             </Link>
             <Link to="/loginas" className="login-btn login-btn-secondary">
