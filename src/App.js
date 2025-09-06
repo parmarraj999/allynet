@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './page/landing-page/landingPage';
-import LoginPage from './page/login-page/loginPage';
-import SignupPage from './page/login-page/signupPage';
-import LoginasPage from './page/login-page/loginasPage';
+import LoginPage from './page/auth/loginPage';
+import SignupPage from './page/auth/signupPage';
+import LoginasPage from './page/auth/loginasPage';
 import Main from './layout/main/main';
 import FeedPage from './page/feed-page/feedPage';
 import LibraryPage from './page/library-page/libraryPage';
