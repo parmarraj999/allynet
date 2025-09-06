@@ -32,9 +32,9 @@
 .filter-btn {
   display: flex;
   align-items: center;
+  gap: 8px;
   width: 144px;
   padding: 6px 15px;
-  gap: 8px;
   border-radius: 45px;
   border: none;
   cursor: pointer;
@@ -80,7 +80,7 @@
 .note-card .meta {
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 10px;
   font-size: 12px;
   color: black;
   margin-bottom: 12px;
@@ -112,6 +112,7 @@
   color: white;
   border-radius: 6px;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .download-btn:hover {
@@ -125,5 +126,5 @@
 
 .file-size {
   font-size: 12px;
-  color: #7b7b7b;
+  color: #7B7B7B;
 }
