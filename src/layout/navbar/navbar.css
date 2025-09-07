@@ -33,12 +33,13 @@
   align-items: center;
   gap: 8px;
   background-color: #1100ff;
+   font-family: "Open Sans", sans-serif;
   color: white;
   border: none;
   border-radius: 5px;
   padding: .4rem 1.2rem;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -47,14 +48,6 @@
   background-color: #0d00e6;
 }
 
-.bell-icon {
-  width: 24px;
-  height: 24px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
 
 .profile-indicator {
   width: 45px;
