@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import './libraryPage.css';
 import { dummyNotes } from '../../data/notesData';
 import { useNavigate } from "react-router-dom";
+import { LayoutContext } from "../../layout/main/layoutContext";
 
 function LibraryPage() {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [filterCategory, setFilterCategory] = useState("All");
+
+  const { collapse, setCollapse } = useContext(LayoutContext) 
 
   const filteredNotes = dummyNotes
     .filter(note => 
@@ -64,7 +67,7 @@ function LibraryPage() {
         </button>
       </div>
 
-      <div className="notes-grid">
+      <div className="notes-grid" style={collapse ?{gridTemplateColumns:"repeat(4,1fr)"} :  {}}>  
         {filteredNotes.map(note => (
           <div key={note.id} className="note-card">
             <img className="libimg" src="/assets/libimg.png" alt="background" />

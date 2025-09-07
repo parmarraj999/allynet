@@ -40,7 +40,37 @@ export const dummyNotes = [
     fileUrl: "#",
     size: 5_000_000, // bytes (~5 MB)
     category: "CS"
-  }
+  },
+  {
+    id: 4,
+    title: "Database Management Systems",
+    description: "Normalization, ER diagrams, SQL basics with examples.",
+    uploader: "Guest User",
+    createdAt: "2025-08-28T09:45:00Z",
+    fileUrl: "#",
+    size: 5_000_000, // bytes (~5 MB)
+    category: "CS"
+  },
+  {
+    id: 4,
+    title: "Database Management Systems",
+    description: "Normalization, ER diagrams, SQL basics with examples.",
+    uploader: "Guest User",
+    createdAt: "2025-08-28T09:45:00Z",
+    fileUrl: "#",
+    size: 5_000_000, // bytes (~5 MB)
+    category: "CS"
+  },
+  {
+    id: 4,
+    title: "Database Management Systems",
+    description: "Normalization, ER diagrams, SQL basics with examples.",
+    uploader: "Guest User",
+    createdAt: "2025-08-28T09:45:00Z",
+    fileUrl: "#",
+    size: 5_000_000, // bytes (~5 MB)
+    category: "CS"
+  },
 ];
 
 export const getTimeAgo = (dateString) => {

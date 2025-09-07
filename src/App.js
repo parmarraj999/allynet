@@ -11,6 +11,7 @@ import AlumniPage from './page/alumni-page/alumniPage';
 import CoursePage from './page/course-page/coursePage';
 import EventPage from './page/event-page/eventPage';
 import DownloadPage from './page/library-page/downloadPage'; // <-- new import
+import PostDetail from './page/feed-page/post-detail/postDetail';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/Sign-up' element={<SignupPage />} />
           <Route path='/' element={<Main />} >
             <Route path='' element={<FeedPage/>} />
+            <Route path='/post/:id' element={<PostDetail/>}/>
             <Route path='/library' element={<LibraryPage/>} />
             <Route path='/alumni' element={<AlumniPage/>} />
             <Route path='/courses' element={<CoursePage/>} />
