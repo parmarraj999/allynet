@@ -161,3 +161,165 @@
     opacity: 0.7;
     transition: opacity 0.2s ease;
 }
+.post-card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 25px;
+    padding: .6rem 1rem;
+    gap: 18px;
+    transition: .2s all;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+.post-card:hover {
+    background: rgba(237, 242, 244, 0.7);
+}
+
+/* Header Section */
+.post-card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-card .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.post-card .avatar {
+    width: 41px;
+    height: 41px;
+    border-radius: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-card .user-details {
+    cursor: pointer;
+    display: flex;
+    gap: 4px;
+}
+
+.post-card .username {
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    line-height: 1;
+    margin: 0;
+}
+
+.post-card .timestamp-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.post-card .dot {
+    width: 4px;
+    height: 4px;
+    background: #7b7b7b;
+    border-radius: 5px;
+}
+
+.post-card .timestamp {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6c6c6c;
+    line-height: 1;
+    margin: 0;
+}
+
+.post-card .more-button {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.post-card .more-icon {
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+}
+
+/* Description */
+.post-card .description {
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    line-height: 1;
+    margin: 0 .5rem;
+    text-align: left;
+}
+
+/* Main Image */
+.post-card .main-image {
+    width: 100%;
+    min-height: 350px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+/* Actions Section */
+.post-card .actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-card .action-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #d8e6ee;
+    border-radius: 32px;
+    padding: 11px 16px;
+    cursor: pointer;
+}
+
+
+.post-card .bookmark-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d8e6ee;
+    border-radius: 32px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    float: right;
+}
+
+
+.post-card .action-count {
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    line-height: 1;
+    margin: 0;
+}
+
+/* Hover Effects */
+.post-card .action-button:hover,
+.post-card .bookmark-button:hover {
+    background: #c8d6de;
+    transition: background-color 0.2s ease;
+}
+
+.post-card .more-button:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
