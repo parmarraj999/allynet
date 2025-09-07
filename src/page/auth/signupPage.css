@@ -183,7 +183,7 @@
   cursor: pointer;
 }
 
-.year-input-wrapper .arrow img {
+.darrow {
   width: 16px;
   height: 16px;
   object-fit: contain;
