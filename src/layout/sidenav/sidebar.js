@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './sidebar.css';
 import { Link } from 'react-router-dom';
+import { LayoutContext } from '../main/layoutContext';
 
 function Sidebar() {
 
-  const [collapse, setCollapse] = useState(false);
+  const { collapse, setCollapse} = useContext(LayoutContext)
 
   return (
     <div className='sidebar-container' style={collapse ? { width: "80px" } : { width: "20%" }} >
