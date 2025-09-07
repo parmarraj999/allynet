@@ -10,6 +10,7 @@ import LibraryPage from './page/library-page/libraryPage';
 import AlumniPage from './page/alumni-page/alumniPage';
 import CoursePage from './page/course-page/coursePage';
 import EventPage from './page/event-page/eventPage';
+import DownloadPage from './page/library-page/downloadPage'; // <-- new import
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path='/alumni' element={<AlumniPage/>} />
             <Route path='/courses' element={<CoursePage/>} />
             <Route path='/events' element={<EventPage/>} />
+            <Route path='/download/:id' element={<DownloadPage />} /> {/* <-- new route */}
           </Route>
         </Routes>
       </BrowserRouter>

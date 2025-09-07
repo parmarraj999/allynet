@@ -28,7 +28,7 @@ function LoginPage() {
           <div className="login-inputs">
             <input className="login-input" type="email" placeholder="Email" />
             <input className="login-input" type="password" placeholder="Password" />
-            <a style={{color:"blue"}}>Foget Password ?</a>
+            <a style={{color:"blue"}}>Forget Password ?</a>
           </div>
 
 
