@@ -1,0 +1,287 @@
+/* Main Content Styles */
+.download-main-content {
+  background: white;
+  padding: .8rem 2rem;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: scroll;
+  text-align: left;
+}
+.download-main-content::-webkit-scrollbar{
+  display: none;
+}
+/* Breadcrumb */
+.breadcrumb {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.breadcrumb-inactive {
+  color: #7b7b7b;
+  cursor: pointer;
+}
+
+.breadcrumb-active {
+  color: black;
+  margin-left: 4px;
+}
+
+/* Hero Image */
+.hero-image {
+  width: 100%;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Left Content */
+.left-content {
+  width: 60%;
+}
+
+.content-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: .4rem 1rem;
+  margin-bottom: 18px;
+  height: 80px;
+  gap: 1rem;
+}
+
+.file-item svg {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.file-info {
+  flex: 1;
+}
+
+.file-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 4px;
+}
+
+.file-size {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7b7b7b;
+}
+
+/* Right Content */
+.right-content {
+  flex: 0 0 370px;
+  min-width: 370px;
+}
+
+.resource-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.resource-description {
+  font-size: 14px;
+  font-weight: 500;
+  color: #727272;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.date-badge {
+  display: inline-block;
+  background: rgba(0, 98, 255, 0.3);
+  color: #0062ff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Author Section */
+.author-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f3f3;
+  border-radius: 5px;
+  padding: 16px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+  
+.author-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #6c6c6c;
+}
+
+.author-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c6c6c;
+}
+
+/* Price Section */
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #bbffc3;
+  border: 1px solid #22bc00;
+  border-radius: 5px;
+  padding: 16px;
+  height: 50px;
+}
+
+.price {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #22bc00;
+}
+
+.price-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #22bc00;
+}
+
+/* Divider */
+.divider {
+  margin: 10px 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(233, 233, 233);
+}
+
+.divider img {
+  width: 100%;
+  height: 1px;
+}
+
+/* Stats Section */
+.stats-section {
+  margin-bottom: 30px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.stat-item svg {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 16px;
+}
+
+.stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+/* Download Button */
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  height: 50px;
+  background: #1100ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.download-button:hover {
+  background: #0d00cc;
+}
+
+.download-icon {
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right-content {
+    flex: 1;
+    min-width: auto;
+  }
+
+  .hero-image {
+    height: 150px;
+  }
+
+  .file-item {
+    height: auto;
+    min-height: 80px;
+  }
+
+  .file-icon {
+    width: 50px;
+    height: 50px;
+  }
+}

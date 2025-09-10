@@ -10,7 +10,7 @@ import LibraryPage from './page/library-page/libraryPage';
 import AlumniPage from './page/alumni-page/alumniPage';
 import CoursePage from './page/course-page/coursePage';
 import EventPage from './page/event-page/eventPage';
-import DownloadPage from './page/library-page/downloadPage'; // <-- new import
+import DownloadPage from './page/library-page/resource-detail-page/downloadPage'; // <-- new import
 import PostDetail from './page/feed-page/post-detail/postDetail';
 
 function App() {
@@ -26,10 +26,10 @@ function App() {
             <Route path='' element={<FeedPage/>} />
             <Route path='/post/:id' element={<PostDetail/>}/>
             <Route path='/library' element={<LibraryPage/>} />
+            <Route path='/library/:id' element={<DownloadPage />} />
             <Route path='/alumni' element={<AlumniPage/>} />
             <Route path='/courses' element={<CoursePage/>} />
             <Route path='/events' element={<EventPage/>} />
-            <Route path='/download/:id' element={<DownloadPage />} /> {/* <-- new route */}
           </Route>
         </Routes>
       </BrowserRouter>
