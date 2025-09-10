@@ -27,7 +27,7 @@ function App() {
             <Route path='/post/:id' element={<PostDetail/>}/>
             <Route path='/library' element={<LibraryPage/>} />
             <Route path='/library/:id' element={<DownloadPage />} />
-            <Route path='/alumni' element={<AlumniPage/>} />
+            {/* <Route path='/alumni' element={<AlumniPage/>} /> */}
             <Route path='/courses' element={<CoursePage/>} />
             <Route path='/events' element={<EventPage/>} />
           </Route>
