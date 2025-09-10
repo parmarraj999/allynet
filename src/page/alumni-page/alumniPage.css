@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     overflow: scroll;
+    padding:0 1rem ;
 }   
 .alumni-page-container::-webkit-scrollbar{
     display: none;
@@ -38,7 +39,135 @@
 }
 .alumni-result-count{
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 2rem;
     font-weight: 600;
+}
+/* user card list  */
+.alumni-user-card-container{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-left: 2rem;
+  margin-top: 1em;
+  gap: 1rem;
+}
+.alumni-user-card-container .alumni-user-card{
+  width: 100%;
+  height: 200px;
+  border: 1.5px solid #A7A7A7;
+  border-radius: 1.2rem;
+}
+
+
+
+
+.alumni-card {
+  width: 500px;
+  border: 1px solid #A7A7A7;
+  border-radius: 20px;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.alumni-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alumni-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius:10px;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+.alumni-info {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.alumni-name {
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.alumni-badge {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.alumni-email {
+  color: #666;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 4px;
+}
+
+.alumni-date {
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1.4px solid #A2A2A2;
+  padding: .3rem .6rem;
+  border-radius: 10px;
+}
+
+.alumni-description {
+  margin: 12px 0;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+.alumni-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alumni-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #A7A7A7;
+  border: 1.4px solid #A7A7A7;
+  padding: .4rem .6rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.alumni-connect-btn {
+  border: 1.5px solid #0062FF;
+  background-color: transparent;
+  color: #0062FF;
+  padding: .6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.alumni-connect-btn:hover {
+  background-color: #0062FF;
+  color: #fff;
 }
