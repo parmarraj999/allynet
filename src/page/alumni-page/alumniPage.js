@@ -89,7 +89,7 @@ function AlumniPage() {
       </div>
       <h3 className='alumni-result-count'>12 Result</h3>
       <div className='alumni-user-card-container' >
-        <Link className="alumni-card">
+        <Link to='/alumni/123' className="alumni-card">
           <div className="alumni-header">
             <img src='https://i.pinimg.com/736x/dc/35/f0/dc35f072bec66d3634937f2ef96520b7.jpg' className="alumni-avatar" />
             <div className="alumni-info">
