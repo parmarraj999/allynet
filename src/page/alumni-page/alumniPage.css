@@ -4,9 +4,10 @@
     overflow: scroll;
     padding:0 1rem ;
 }   
-.alumni-page-container::-webkit-scrollbar{
-    display: none;
+.alunni-page-container::-webkit-scrollbar{
+  display: none;
 }
+
 .alumni-filter-container{
     width: 100%;
     height: 60px;
@@ -15,7 +16,7 @@
     align-items: center;
     padding: 0 1.2rem;
 }
-.alumni-filter-container .filter-box{
+.alumni-filter-container .filter-box-alumni{
     padding: .5rem 1rem;
     border: 1px solid #7B7B7B;
     font-size: 16px;
@@ -26,7 +27,7 @@
     border-radius: 2rem;
     color: #7B7B7B;
 }
-.filter-box select{
+.filter-box-alumni select{
     max-width: 110px;
 }
 

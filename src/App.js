@@ -13,6 +13,8 @@ import EventPage from './page/event-page/eventPage';
 import DownloadPage from './page/library-page/resource-detail-page/downloadPage'; // <-- new import
 import PostDetail from './page/feed-page/post-detail/postDetail';
 import AlumniDetailPage from './page/alumni-page/alumni-detail-page/alumniDetail';
+import CourseDetail from './page/course-page/course-detail-page/courseDetail';
+import EventDetailPage from './page/event-page/event-detail-page/eventDetail';
 
 function App() {
   return (
@@ -31,7 +33,9 @@ function App() {
             <Route path='/alumni' element={<AlumniPage/>} />
             <Route path='/alumni/:id' element={<AlumniDetailPage/>}/>
             <Route path='/courses' element={<CoursePage/>} />
+            <Route path='/courses/:id' element={<CourseDetail/>} />
             <Route path='/events' element={<EventPage/>} />
+            <Route path='/events/:id' element={<EventDetailPage/>} />
           </Route>
         </Routes>
       </BrowserRouter>

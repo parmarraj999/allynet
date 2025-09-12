@@ -18,12 +18,11 @@ function AlumniPage() {
 
   const FilterDropdown = ({ label, options, value, onChange }) => {
     return (
-      <div className="filter-box">
+      <div className="filter-box-alumni">
         <select
           style={{ border: "none" }}
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          className="filter-select"
         >
           <option value="">{label}</option>
           {options.map(option => (
