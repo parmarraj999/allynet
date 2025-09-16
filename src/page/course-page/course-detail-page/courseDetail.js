@@ -94,7 +94,9 @@ const CourseDetail = () => {
                     <div className="tab-content">
 
                         <div className="description-content">
+                            
                             <p>{courseData.description}</p>
+
                             <div className="course-details">
                                 <div className="detail-item">
                                     <span className="detail-label">Duration</span>

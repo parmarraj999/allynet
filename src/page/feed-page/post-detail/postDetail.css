@@ -83,7 +83,7 @@
 .post-detail .timestamp-container {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
 }
 
 .post-detail .dot {
@@ -121,11 +121,11 @@
 
 /* Post Description */
 .post-detail .post-description {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 16px;
     color: black;
     text-align: left;
-    margin: 0 1rem;
+    margin: 0 .8rem;
 }
 
 /* Main Image */
@@ -135,6 +135,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
     border-radius: 15px;
     background: rgba(0,0,0,.1);
 }
@@ -271,4 +272,16 @@
 .post-detail .more-button:hover {
     opacity: 0.7;
     transition: opacity 0.2s ease;
+}
+
+@media screen and (max-width:765px) {
+    .post-detail{
+        width: 94%;
+        padding: 1rem 0;
+        margin: 0 auto;
+        min-height: fit-content;   
+    }
+    .post-detail .user-info{
+        gap: 5px;
+    }
 }

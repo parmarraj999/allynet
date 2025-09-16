@@ -263,27 +263,17 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .content-wrapper {
+  .download-main-content{
+    padding: 1rem .8rem;
+  }
+  .content-wrapper{
     flex-direction: column;
-    gap: 20px;
+    padding-bottom: 3rem;
   }
-
-  .right-content {
-    flex: 1;
-    min-width: auto;
+  .left-content{
+    width: 100%;
   }
-
-  .hero-image {
-    height: 150px;
-  }
-
-  .file-item {
-    height: auto;
-    min-height: 80px;
-  }
-
-  .file-icon {
-    width: 50px;
-    height: 50px;
+  .file-item{
+    width: 100%;
   }
 }

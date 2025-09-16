@@ -50,11 +50,11 @@ const EventPage = () => {
 
   return (
     <div className="events-page">
-    
+
       {/* Header */}
       <div className="events-header">
         <h1 className="events-title">Events</h1>
-        
+
         <div className="header-actions">
           <button className="action-btn">
             <Calendar size={20} />
@@ -73,7 +73,7 @@ const EventPage = () => {
         {events.map((event, index) => (
           <div key={index}>
             {/* Date Header */}
-            {(index === 0 || events[index-1].date !== event.date) && (
+            {(index === 0 || events[index - 1].date !== event.date) && (
               <div className="date-header">
                 <div className="date-indicator" />
                 <h2 className="date-text">
@@ -87,21 +87,21 @@ const EventPage = () => {
             <Link to='/events/1232' className="event-card">
               <div className="event-content">
                 <div className="event-time">{event.time}</div>
-                
+
                 <h3 className="event-title">{event.title}</h3>
-                
+
                 <div className="event-organizers">
                   <div className="organizer-info">
                     <div className="organizer-icon">👤</div>
                     {event.organizers}
                   </div>
                 </div>
-                
+
                 <div className="event-location">
                   <MapPin size={16} />
                   {event.location}
                 </div>
-                
+
                 {event.attendees && (
                   <div className="attendees-section">
                     <div className="attendee-avatars">
@@ -117,7 +117,7 @@ const EventPage = () => {
                     </div>
                   </div>
                 )}
-                
+
                 {event.waitlist && (
                   <div className="waitlist-section">
                     <span className="waitlist-badge">Waitlist</span>
@@ -126,18 +126,10 @@ const EventPage = () => {
               </div>
 
               {/* Event Banner */}
-              <div 
+              <div
                 className="event-banner"
-                style={{
-                  backgroundColor: event.bannerColor,
-                  backgroundImage: `linear-gradient(135deg, ${event.bannerColor} 0%, ${event.bannerColor}dd 100%)`
-                }}
               >
-                <div className="banner-badge">flexoffice</div>
-                
-                <div className="banner-text">{event.bannerText}</div>
-                
-                <div className="banner-subtext">{event.bannerSubtext}</div>
+                <img src='https://i.pinimg.com/736x/65/e8/61/65e861e180d6302b932e9b5f12f91a50.jpg' />
               </div>
             </Link>
           </div>

@@ -28,3 +28,9 @@
 .feed-page-wrapper::-webkit-scrollbar{
     display: none;
 }
+
+@media screen and (max-width:765px) {
+    .feed-page-container{
+        padding: 0 .6rem;
+    }
+}

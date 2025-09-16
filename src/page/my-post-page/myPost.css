@@ -1,0 +1,175 @@
+/* Posts Page Styles */
+.posts-container {
+    background-color: white;
+    color: black;
+    padding: 20px 2.55rem;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    text-align: left;
+}
+
+.posts-header {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.my-post-card {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    display: flex;
+    max-height: 350px;
+    gap: 1rem;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.post-date {
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+
+.post-menu {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.post-menu:hover {
+    background-color: #e5e5e5;
+}
+
+.post-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.post-text {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.my-post-image {
+    width: 50%;
+    
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+.my-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    padding: .6rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    border-radius:2rem;
+    background: #d8e6ee;
+}
+
+.action-button:hover {
+    background-color: #d8e6ee;
+}
+
+.action-icon {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.like-icon {
+    stroke-width: 1.5;
+}
+
+.comment-icon {
+    stroke-width: 1.5;
+}
+
+.action-count {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .posts-container {
+        padding: 15px;
+    }
+
+    .post-content {
+        flex-direction: column;
+    }
+
+    .my-post-image {
+        flex: none;
+        width: 100%;
+        height: 200px;
+    }
+
+    .post-actions {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .posts-header {
+        font-size: 20px;
+    }
+
+    .my-post-card {
+        padding: 15px;
+    }
+
+    .post-content {
+        gap: 15px;
+    }
+}

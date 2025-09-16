@@ -23,7 +23,6 @@ function LandingPage() {
   return (
     <div className="landing-parent">
 
-      <section className="navbar-section">
         <div className="navbar-card">
           <div className="logo-text">ALLYNET</div>
           <div className="menu-links">
@@ -48,7 +47,6 @@ function LandingPage() {
           </div>
           <Link to='/login' className="navbutton">Join for Free</Link>
         </div>
-      </section>
 
       <section className="hero-section">
         <div className="big-image-container">
@@ -105,12 +103,12 @@ function LandingPage() {
             </div>
             <div className="cards">
              <svg style={{width:"35px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 2H13V1H11V2H7C5.34315 2 4 3.34315 4 5V8C4 10.7614 6.23858 13 9 13H15C17.7614 13 20 10.7614 20 8V5C20 3.34315 18.6569 2 17 2ZM11 7.5C11 8.32843 10.3284 9 9.5 9C8.67157 9 8 8.32843 8 7.5C8 6.67157 8.67157 6 9.5 6C10.3284 6 11 6.67157 11 7.5ZM16 7.5C16 8.32843 15.3284 9 14.5 9C13.6716 9 13 8.32843 13 7.5C13 6.67157 13.6716 6 14.5 6C15.3284 6 16 6.67157 16 7.5ZM4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4Z"></path></svg>
-              <h3>AI Mentor Match</h3>
+              <h2>AI Mentor Match</h2>
               <p>Our AI instantly matches you with the best mentor based on your interests, skills, and goals</p>
             </div>
             <div className="cards">
               <svg style={{width:"35px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7.00002C16.4183 7.00002 20 10.5817 20 15C20 19.4183 16.4183 23 12 23C7.58172 23 4 19.4183 4 15C4 10.5817 7.58172 7.00002 12 7.00002ZM12 10.5L10.6775 13.1797L7.72025 13.6094L9.86012 15.6953L9.35497 18.6406L12 17.25L14.645 18.6406L14.1399 15.6953L16.2798 13.6094L13.3225 13.1797L12 10.5ZM13 1.99902L18 2.00002V5.00002L16.6366 6.13758C15.5305 5.55773 14.3025 5.17887 13.0011 5.04951L13 1.99902ZM11 1.99902L10.9997 5.04943C9.6984 5.17866 8.47046 5.55738 7.36441 6.13706L6 5.00002V2.00002L11 1.99902Z"></path></svg>
-              <h4>Gamified Learning</h4>
+              <h2>Gamified Learning</h2>
               <p>Stay motivated with badges, rewards, and leaderboards while learning and sharing knowledge.</p>
             </div>
 
@@ -151,25 +149,6 @@ function LandingPage() {
 
 
     </section>
-
-      {/* Hero2 Section */}
-      {/* <section className="hero2-section">
-        <div className="big-image2-container">
-          <img src={hero2} alt="Hero background" className="big-bg2" />
-          <div className="hero2-content">
-            <h1 className="hero2-title">
-
-              Meet ALLYNET, the first platform that combines verified mentorship,
-            <span className="half-title"> clear career roadmaps, and gamified learning — built to help students grow faster with the right guidance.</span>
-            </h1>
-            <a href="#signup" className="hero-button">Get Started</a>
-          </div>
-        </div>
-      </section> */}
-      <section className='hero-two' >
-        <div className="hero-two-container">
-        </div>
-      </section>
 
     </div>
   );

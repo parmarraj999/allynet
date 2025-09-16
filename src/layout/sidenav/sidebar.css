@@ -8,6 +8,11 @@
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (max-width: 765px) {
+  .sidebar-container {
+    display: none;
+  }
+}
 .sidebar-container .collapse-btn {
   width: 45px;
   height: 45px;

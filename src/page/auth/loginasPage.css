@@ -1,133 +1,146 @@
-.login-wrapper {
+.loginas-wrapper {
   background-color: black;
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
 }
 
-.left-section {
-  color: white;
-  justify-content: center;
-  width: 59.37%;
-}
-.blank-container {
-  display: flex;
-  flex-direction: row;
-  
-}
-.blank-box1 {
-  width: 55%;
-  height: 10px;        
-  background-color: white;
-  border-radius: 8px; 
-  margin: 10px 2px 40px;   
-}
-.blank-box2 {
-  width: 55%;
-  height: 10px;        
-  background-color: #1E1E1E;
-  border-radius: 8px; 
-  margin: 10px 2px 40px;   
-}
-
-
-.left-section h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 1px 0 30px;
-}
-
-.right-section {
-  width: 40.63%;
-  padding: 40px 20px;
+.loginas-left {
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.right-section img {
+.loginas-container {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden;
 }
 
-.login-buttons {
+.loginas-progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #333333;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.loginas-progress-fill {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.loginas-content {
   display: flex;
   flex-direction: column;
-}
-
-.login-button1,
-.login-button2,
-.login-button3 {
-  box-sizing: border-box;
-  display: flex;
-  border-radius: 40px;
-  text-decoration: none;
   align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
   justify-content: center;
-  font-size: 1.125rem;
-  padding: 20px;
-  margin: 10px 100px;
 }
 
-.login-button1:hover,
-.login-button2:hover,
-.login-button3:hover
-{
-  background-color: #d9d9d9;
-  border: 2px solid #ffffff;
+.loginas-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.loginas-button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.loginas-signup-button {
+  width: 450px;
+  height: 55px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.loginas-signup-button:hover {
+  background-color: #ffffff;
   color: #000000;
 }
 
- .login-button1,
- .login-button2,
- .login-button3 {
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+.loginas-signup-button:active {
+  transform: scale(0.98);
 }
 
+.loginas-login-text {
+  color: #999999;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
 
+.loginas-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.loginas-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
-/* Mobile responsiveness */
+/* Responsive */
 @media (max-width: 768px) {
-  .login-wrapper {
+  .loginas-wrapper {
     flex-direction: column;
-    width: 90%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-height: auto;
+    height: 100vh;
   }
 
-  .left-section,
-  .right-section {
+  .loginas-left {
     width: 100%;
+    height: 100%;
     padding: 20px;
   }
 
-  .right-section img {
-    height: 200px;
-    width: auto;
-    max-width: 90%;
-    object-fit: contain;
-    margin: 0 auto;
+  /* hide right section completely on mobile */
+  .loginas-right {
+    display: none !important;
   }
 
-
-  .login-button1,
-  .login-button2,
-  .login-button3
-   {
-    margin-left: auto;
-    margin-right: auto;
+  .loginas-title {
+    font-size: 22px;
+    margin-bottom: 40px;
   }
-}
-.alreadyhaveaccount {
-  margin-top: 20px;
-  
+
+  .loginas-signup-button {
+    width: 300px;
+    height: 52px;
+    font-size: 17px;
+  }
 }

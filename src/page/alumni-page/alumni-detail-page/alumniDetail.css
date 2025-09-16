@@ -1,24 +1,26 @@
-.alumni-detail-container{
+.alumni-detail-container {
   width: 100%;
   height: 100%;
   overflow: scroll;
   padding: 1rem 2rem;
 }
-.alumni-detail-container::-webkit-scrollbar{
+
+.alumni-detail-container::-webkit-scrollbar {
   display: none;
 }
 
-.alumni-header-image .back-btn{
+.alumni-header-image .back-btn {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: rgba(255,255,255,.6);
+  background: rgba(255, 255, 255, .6);
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
-.alumni-header-image{
+
+.alumni-header-image {
   width: 100%;
   height: 170px;
   background-size: cover;
@@ -27,7 +29,8 @@
   padding: 1rem;
   border-radius: 1.6rem;
 }
-.alumni-detail-wrapper{
+
+.alumni-detail-wrapper {
   width: 45%;
   margin-top: -70px;
   margin-left: auto;
@@ -35,33 +38,44 @@
   height: 100%;
 }
 
-.alumni-detail-wrapper .alumni-profile{
+.alumni-detail-wrapper .alumni-profile {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   background: red;
+  overflow: hidden;
 }
-.alumni-details{
+
+.alumni-profile img{
+  width: 100%;
+  height: 100%;
+}
+
+.alumni-details {
   margin-top: .8rem;
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: .2rem;
 }
-.alumni-details h2{
+
+.alumni-details h2 {
   font-size: 18px;
   font-weight: 600;
 }
-.alumni-details h3{
+
+.alumni-details h3 {
   font-size: 16px;
   font-weight: normal;
   color: grey;
 }
-.alumni-details h4{
+
+.alumni-details h4 {
   font-size: 16px;
   font-weight: 700;
   color: #1100FF;
 }
+
 .alumni-details h5 {
   display: flex;
   align-items: center;
@@ -70,7 +84,8 @@
   font-weight: 600;
   margin-top: .4rem;
 }
-.alumni-details .verified-badge{
+
+.alumni-details .verified-badge {
   padding: .4rem 1rem;
   border: 1px solid #A0A0A0;
   color: #A0A0A0;
@@ -83,74 +98,117 @@
   font-weight: 600;
   border-radius: 5px;
 }
-.alumni-detail-wrapper .line{
+
+.alumni-detail-wrapper .line {
   width: 100%;
   height: 1px;
   background: #A0A0A060;
   margin-top: 1rem;
 }
-.alumni-about{
+
+.alumni-about {
   margin-top: .5rem;
   width: 100%;
   height: 100px;
   text-align: left;
 }
-.alumni-about h2{
+
+.alumni-about h2 {
   font-size: 16px;
-  color:#A0A0A0;
+  color: #A0A0A0;
   font-weight: 600;
 }
-.alumni-about p{
+
+.alumni-about p {
   font-size: 14px;
   font-size: 500;
   margin-top: .3rem;
 }
-.alumni-experience{
+
+.alumni-experience {
   margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
   text-align: left;
 }
-.alumni-experience h2{
+
+.alumni-experience h2 {
   font-size: 16px;
-  color:#A0A0A0;
+  color: #A0A0A0;
   font-weight: 600;
 }
-.alumni-experience .experience-box{
+
+.alumni-experience .experience-box {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  flex-wrap: wrap;
+  /* gap: 1rem; */
+  line-height: .9;
 }
-.experience-box h1{
-  font-size: 18px;
+
+.experience-box h1 {
+  width: 60%;
+  font-size: 16px;
   font-weight: 600;
   margin-top: .4rem;
 }
-.experience-box h4{
-  font-size: 16px;
+
+.experience-box h4 {
+  font-size: 14px;
   font-weight: 600;
   margin-top: .4rem;
   color: #A0A0A0;
+  white-space: nowrap;
 }
-.alumni-skills{
+
+.alumni-skills {
   margin-top: .5rem;
   text-align: left;
 }
-.alumni-skills h2{
+
+.alumni-skills h2 {
   font-size: 16px;
-  color:#A0A0A0;
+  color: #A0A0A0;
   font-weight: 600;
 }
-.alumni-skills .skill-tags{
+
+.alumni-skills .skill-tags {
   margin-top: .8rem;
   display: flex;
   gap: .6rem;
   flex-wrap: wrap;
 
 }
-.skill-tags .skill-tag{
+
+.skill-tags .skill-tag {
   border: 1px solid grey;
   width: fit-content;
   padding: .4rem 1rem;
   font-size: 16px;
   font-weight: 600;
   border-radius: 10px;
+}
+
+@media screen and (max-width:765px) {
+  .alumni-detail-container {
+    padding: .4rem .5rem;
+  }
+
+  .alumni-detail-wrapper {
+    width: 96%;
+    margin-top: -50px;
+  }
+
+  .alumni-header-image{
+    border-radius: .8rem;
+  }
+
+  .alumni-detail-wrapper .alumni-profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: red;
+    margin-left: .4rem;
+  }
 }

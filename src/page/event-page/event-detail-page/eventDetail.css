@@ -1,120 +1,120 @@
-.event-container {
+.edp-container {
   background-color: white;
   color: black;
- height: 100%;
- overflow: scroll;
- text-align: left;
+  height: 100%;
+  overflow-y: auto;
+  text-align: left;
   padding: 40px 20px;
 }
-.event-container::-webkit-scrollbar{
-    display: none;
+.edp-container::-webkit-scrollbar {
+  display: none;
 }
 
-.event-content {
-  width: 50%;
+.edp-content {
+  width: 60%;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
+  gap: 2rem;
 }
 
-.event-image-section {
-  flex: 0 0 300px;
+.edp-image-section {
+  flex: 0 0 280px;
 }
 
-.event-image-card {
+.edp-image-card {
   background: linear-gradient(135deg, #2d5a4a 0%, #4a8b6b 100%);
   border-radius: 16px;
-  padding: 60px 40px;
+  padding: 40px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-.shuttlecock-image {
-  width: 120px;
+.edp-shuttlecock-image {
+  width: 100px;
   height: auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-.date-badge {
+.edp-date-badge {
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
-  padding: 8px 16px;
+  padding: 6px 12px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   display: inline-block;
 }
 
-.event-details {
+.edp-details {
   flex: 1;
 }
 
-.event-title {
-  font-size: 36px;
+.edp-title {
+  font-size: 32px;
   font-weight: 700;
   color: black;
-  margin-bottom: 24px;
-  line-height: 1.2;
+  margin-bottom: 20px;
+  line-height: 1.3;
 }
 
-.event-datetime {
-  margin-bottom: 16px;
+.edp-datetime {
+  margin-bottom: 12px;
 }
 
-.date-text {
-  font-size: 16px;
+.edp-date-text {
+  font-size: 15px;
   font-weight: 600;
   color: black;
   margin-bottom: 4px;
 }
 
-.time-text {
-  font-size: 14px;
+.edp-time-text {
+  font-size: 13px;
   color: #666;
 }
 
-.event-location {
-  margin-bottom: 32px;
+.edp-location {
+  margin-bottom: 24px;
 }
 
-.location-text {
+.edp-location-text {
   font-size: 14px;
-   display: flex;
+  display: flex;
   align-items: center;
-  gap: .2rem;
+  gap: .3rem;
   font-weight: 500;
   color: #666;
 }
 
-.registration-section {
+.edp-registration {
   border-radius: 12px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
-.registration-title {
+.edp-registration-title {
   font-size: 16px;
   font-weight: 600;
   color: black;
-  margin-bottom: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding: .6rem 1.4rem;
   background: rgba(0, 0, 0, 0.05);
 }
 
-.approval-notice {
+.edp-approval {
   display: flex;
   align-items: flex-start;
   gap: 12px;
   padding: .6rem 1.4rem;
-  margin-bottom: 24px;
 }
 
-.approval-icon {
-  width: 45px;
-  height: 45px;
+.edp-approval-icon {
+  width: 40px;
+  height: 40px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
@@ -122,66 +122,64 @@
   border-radius: 10px;
 }
 
-.approval-text {
+.edp-approval-text {
   flex: 1;
 }
 
-.approval-title {
+.edp-approval-title {
   font-size: 14px;
   font-weight: 600;
   color: black;
   margin-bottom: 3px;
 }
 
-.approval-subtitle {
+.edp-approval-subtitle {
   font-size: 12px;
   color: #666;
 }
 
+.edp-join-wrapper {
+  margin: .5rem;
+}
 
-.join-button {
+.edp-join-button {
   width: 100%;
   background-color: black;
-  color: black;
-  border: 1px solid #ddd;
+  color: white;
+  border: 1px solid black;
   padding: 12px 24px;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
-  color: white;
-  border: 1px solid black;
+  transition: all 0.2s;
 }
 
-.join-button:hover {
-  border: 1px solid black;
+.edp-join-button:hover {
   background: transparent;
   color: black;
 }
 
-
-.host-section {
-  margin-bottom: 25px;
+.edp-host {
+  margin-bottom: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: .8rem;
 }
 
-.host-label {
+.edp-host-label {
   font-size: 12px;
   color: #666;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
-.host-info {
+.edp-host-info {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 16px;
 }
 
-.host-avatar {
+.edp-host-avatar {
   width: 32px;
   height: 32px;
   background-color: #ff6b35;
@@ -194,65 +192,65 @@
   font-size: 14px;
 }
 
-.host-name {
+.edp-host-name {
   font-size: 14px;
   font-weight: 600;
   color: black;
 }
 
-.host-member {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
+.edp-about {
+  margin-top: 16px;
 }
 
-.member-avatar {
-  width: 24px;
-  height: 24px;
-  background-color: #ccc;
-  border-radius: 50%;
-}
-
-.member-name {
-  font-size: 12px;
-  color: black;
-}
-
-.going-count {
-  font-size: 12px;
-  color: #666;
-}
-
-.about-section {
-  margin-top: 20px;
-}
-
-.about-title {
+.edp-about-title {
   font-size: 18px;
   font-weight: 600;
   color: black;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
-.about-text {
+.edp-about-text {
   font-size: 14px;
   color: black;
   line-height: 1.6;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .edp-content {
+    width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
-  .event-content {
+  .edp-content {
     flex-direction: column;
     gap: 24px;
+    width: 100%;
+    padding-bottom: 5rem;
   }
-  
-  .event-image-section {
+
+  .edp-image-section {
     flex: none;
+    width: 100%;
   }
-  
-  .event-title {
-    font-size: 28px;
+
+  .edp-image-card {
+    padding: 30px 20px;
+  }
+
+  .edp-shuttlecock-image {
+    width: 80px;
+    margin-bottom: 16px;
+  }
+
+  .edp-title {
+    font-size: 24px;
+  }
+
+  .edp-join-button {
+    font-size: 13px;
+    padding: 10px 20px;
   }
 }

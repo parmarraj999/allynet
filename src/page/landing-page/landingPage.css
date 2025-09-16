@@ -1,13 +1,11 @@
-.navbar-section {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-}
+
 
 .navbar-card {
   display: flex;
-  position: fixed;
-  top: 25;
+  position:fixed;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%,0);
   z-index: 1000;
   justify-content: space-between;
   align-items: center;
@@ -98,8 +96,14 @@
   text-decoration: none;
 }
 
+.hero-section{
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+}
 .big-image-container {
-  margin: 50px 34px 0px 34px;
+  /* margin: 50px 34px 0px 34px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,7 +271,6 @@
 
 .whyus {
   display: flex;
-
   height: 100vh;
   display: flex;
   align-items: center;
@@ -585,4 +588,73 @@
   outline: none !important;
   border: none !important;
   background: transparent !important;
+}
+
+
+@media screen and (max-width:765px) {
+    .navbar-card{
+      width: 96%;
+      top: 1%;
+      padding: .5rem;
+    }
+    .navbar-card .logo-text{
+      font-size: 16px;
+      padding-left: 10px;
+    }
+    .menu-links{
+      display: none;
+    }
+
+    .hero-section{
+      margin-top: .5rem;
+      width: 96%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-title{
+      font-size: 4.5vw;
+    }
+    .hero-subtitle{
+      font-size: 4.5vw;
+    }
+    .big-image-container{
+      height: 90vh;
+      border-radius: 2rem;
+    }
+    .hero-content{
+      gap: 1rem;
+    }
+    .next-text{
+      font-size: 1.2rem;
+      max-width: 85%;
+    }
+    .why-us-container{
+      flex-direction: column;
+    } 
+    .heading{
+      font-size: 18px;
+    }
+    .right-part .cards h2{
+      font-size: 16px;
+      height: 50px;
+    }
+    .syct{
+      height: fit-content;
+      margin-bottom: 3rem;
+    }
+    .cards2container{
+      max-width: 93%;
+      height: fit-content;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card2{
+      min-width: 300px;
+      max-width: 90%;
+    }
+    .syct .heading{
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 3rem;
+    }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './coursePage.css';
+import { Link } from 'react-router-dom';
 
 const CoursePage = () => {
   const courses = [
@@ -99,7 +100,7 @@ const CoursePage = () => {
           <input
             type="text"
             placeholder="Search in your courses..."
-            className="search-input"
+            className="course-search-input"
           />
           <span className="search-icon">🔍</span>
         </div>
@@ -121,7 +122,7 @@ const CoursePage = () => {
 
       <div className="courses-grid">
         {courses.map((course) => (
-          <div key={course.id} className="course-card">
+          <Link to='/courses/123' key={course.id} className="course-card">
             <div className="course-image">
               <img src={course.image} alt={course.title} />
             </div>
@@ -145,7 +146,7 @@ const CoursePage = () => {
                 <div className="course-price">{course.price}</div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

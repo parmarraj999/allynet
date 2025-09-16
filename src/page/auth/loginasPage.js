@@ -1,38 +1,42 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom';
 import './loginasPage.css';
 
 function LoginasPage() {
   return (
-    
-    
-    <section className="login-wrapper">
-      <div className="left-section">
-        <div className="blank-container">
-        <div className="blank-box1"></div>
-        <div className="blank-box2"></div>
-        </div>
-        <h1>Join Allynet As</h1>
-        
-        
-        
-        <div className="login-buttons">
-          <Link to='/Sign-up' className="login-button1">Student</Link>
-          <Link to='/Sign-up' className="login-button2">Mentor</Link>
-          <Link to='/Sign-up' className="login-button3">Alumni</Link>
-          <Link to='/login' className="alreadyhaveaccount" style={{textDecoration: "none" , cursor: "pointer" }}>Already have account ?</Link>
+    <section className="loginas-wrapper">
+      <div className="loginas-left">
+        <div className="loginas-container">
+          <div className="loginas-progress-bar">
+            <div className="loginas-progress-fill"></div>
+          </div>
+
+          <div className="loginas-content">
+            <h1 className="loginas-title">Join Allynet As</h1>
+
+            <div className="loginas-button-group">
+              <Link to='/signin'>
+                <button className="loginas-signup-button">Student</button>
+              </Link>
+              <Link to='/signin'>
+                <button className="loginas-signup-button">Mentor</button>
+              </Link>
+              <Link to='/signin'>
+                <button className="loginas-signup-button">Alumni</button>
+              </Link>
+            </div>
+
+            <Link to='/login' className="loginas-login-text">
+              Already have account ?
+            </Link>
+          </div>
         </div>
       </div>
-       <div className="right-section">
-        <img src="/assets/login.png" alt=""/>
-        
-       </div>
-      
-      
-    
+      <div className="loginas-right">
+        <img src="/assets/login.png" alt="loginas" />
+      </div>
     </section>
-    
   )
 }
+
 export default LoginasPage;

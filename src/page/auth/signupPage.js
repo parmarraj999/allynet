@@ -1,155 +1,189 @@
-import React, { useState, useRef, useEffect } from 'react'; 
-
-import { Link } from 'react-router-dom';
+import React, { useState, useRef, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './signupPage.css';
 
+// firebase imports
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { doc, setDoc } from 'firebase/firestore';
+import { auth, db } from '../../firebase/firebase.config';
 
 export default function SignupPage() {
-  const [year, setYear] = useState('');
-  const [showDropdown, setShowDropdown] = useState(false);
-  const wrapperRef = useRef(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    college: '',
+    branch: '',
+    year: '',
+    goal: '',
+    email: '',
+    password: ''
+  });
 
-  // keep these here
-  const years = ['1st', '2nd', '3rd', '4th'];
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
-  const formatYear = (num) => {
-    switch (num) {
-      case '1': return '1st';
-      case '2': return '2nd';
-      case '3': return '3rd';
-      case '4': return '4th';
-      default: return num;
-    }
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   };
 
-  // ✅ keep handleSelect defined
-  const handleSelect = (option) => {
-    setYear(option);
-    setShowDropdown(false);
-  };
+  const handleSignup = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+    try {
+      // 1. Create user in Auth
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        formData.email,
+        formData.password
+      );
+      const user = userCredential.user;
 
-  // click outside to close dropdown
-  useEffect(() => {
-    const onDocClick = (e) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
-        setShowDropdown(false);
-      }
-    };
-    document.addEventListener('mousedown', onDocClick);
-    return () => document.removeEventListener('mousedown', onDocClick);
-  }, []);
-
-  // add state for deletion flag
-  const [isDeleting, setIsDeleting] = useState(false);
-
-  // key handlers (desktop)
-  const handleKeyDown = (e) => {
-    if (e.key === 'Backspace' || e.key === 'Delete') setIsDeleting(true);
-  };
-  const handleKeyUp = (e) => {
-    if (e.key === 'Backspace' || e.key === 'Delete') {
-      setTimeout(() => setIsDeleting(false), 0);
-    }
-  };
-
-  // ✅ final handleYearChange (only once)
-  const handleYearChange = (e) => {
-    const val = e.target.value;
-    const inputType = e.nativeEvent && e.nativeEvent.inputType;
-    const deletingNow = isDeleting || (inputType && inputType.startsWith('delete'));
-
-    if (!deletingNow && /^[1-4]$/.test(val)) {
-      setYear(formatYear(val));
-    } else {
-      setYear(val);
+      // 2. Create user doc in Firestore
+      await setDoc(doc(db, 'users', user.uid), {
+        uid: user.uid,
+        name: formData.name,
+        email: formData.email,
+        college: formData.college,
+        branch: formData.branch,
+        year: formData.year,
+        goal: formData.goal,
+        role: 'student',
+        createdAt: new Date()
+      })
+      .then(()=>{
+        window.localStorage.setItem("userId",user.uid)
+        window.localStorage.setItem("role",user.role)
+        window.localStorage.setItem("isLogged",true)
+      })
+      alert('Account created successfully!');
+      navigate('/'); // ya jahan tu redirect karna chahe
+    } catch (err) {
+      console.error(err);
+      setError(err.message);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <section className="login-wrapper">
-      <div className="left-section">
-        <div className="blank-container">
-          <div className="blank-box"></div>
-          <div className="blank-box"></div>
+    <section className="allynet-student-signup-wrapper">
+  <div className="allynet-student-left">
+    <div className="allynet-student-container">
+      <div className="allynet-student-progress">
+        <div className="progress-bar">
+          <div className="progress-fill-complete"></div>
         </div>
-        <h1>Join Allynet As Student</h1>
-        <div className="inputs">
-          <input className="input1" type="text" placeholder="Name" />
-          <input className="input2" type="text" placeholder="College" />
-          <div className="subinputs">
-            <input className="subinput1" type="text" placeholder="Branch" />
+        <div className="progress-bar">
+          <div className="progress-fill-complete"></div>
+        </div>
+      </div>
 
-            <div className="year-input-wrapper" ref={wrapperRef}>
-              <input
-                className="subinput2"
-                type="text"
-                placeholder="Year"
-                value={year}
-                onChange={handleYearChange}
-                onFocus={() => setShowDropdown(true)}
-                onBlur={() => setTimeout(() => setShowDropdown(false), 150)}
-                onKeyDown={handleKeyDown}
-                onKeyUp={handleKeyUp}
-                onInput={(e) => {
-                  const it = e.nativeEvent && e.nativeEvent.inputType;
-                  if (it && it.startsWith('delete')) {
-                    setIsDeleting(true);
-                    setTimeout(() => setIsDeleting(false), 0);
-                  }
-                }}
-              />
+      <div className="allynet-student-content">
+        <h1 className="allynet-student-title">Join Allynet As Student</h1>
 
-              <button
-                type="button"
-                className="arrow"
-                aria-label="Toggle year dropdown"
-                onClick={() => setShowDropdown((s) => !s)}
-              >
-                <svg className="darrow"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
-              </button>
+        <form className="allynet-student-form" onSubmit={handleSignup}>
+          {error && <p className="allynet-student-error" style={{ color: 'red' }}>{error}</p>}
 
-              {showDropdown && (
-                <div className="dropdown" role="listbox">
-                  {years.map((option) => (
-                    <div
-                      key={option}
-                      className="dropdown-item"
-                      role="option"
-                      aria-selected={year === option}
-                      onMouseDown={(e) => {
-                        e.preventDefault();
-                        handleSelect(option);
-                      }}
-                    >
-                      {option}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            className="form-input"
+            value={formData.name}
+            onChange={handleInputChange}
+          />
+
+          <input
+            type="text"
+            name="college"
+            placeholder="College"
+            className="form-input"
+            value={formData.college}
+            onChange={handleInputChange}
+          />
+
+          <div className="allynet-student-form-row">
+            <input
+              type="text"
+              name="branch"
+              placeholder="Branch"
+              className="form-input form-input-half"
+              value={formData.branch}
+              onChange={handleInputChange}
+            />
+
+            <select
+              name="year"
+              className="allynet-student-form-select"
+              value={formData.year}
+              onChange={handleInputChange}
+            >
+              <option value="">Year</option>
+              <option value="1st">1st Year</option>
+              <option value="2nd">2nd Year</option>
+              <option value="3rd">3rd Year</option>
+              <option value="4th">4th Year</option>
+            </select>
           </div>
 
           <input
-            className="input3"
             type="text"
-            placeholder="Goal ( e.g Placement, high school )"
+            name="goal"
+            placeholder="Goal (e.g Placement, higher studies)"
+            className="form-input"
+            value={formData.goal}
+            onChange={handleInputChange}
           />
-        </div>
 
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            className="form-input"
+            value={formData.email}
+            onChange={handleInputChange}
+          />
 
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            className="form-input"
+            value={formData.password}
+            onChange={handleInputChange}
+          />
 
-        <div className="buttons">
-          <Link to="/Home" className="button1">Create New Account</Link>
-          <div className="subbuttons">
-            <Link to="/loginas" className="subbutton1">Back</Link>
-            <Link to="/login" className="subbutton2">Login</Link>
+          <button type="submit" className="allynet-student-create-account" disabled={loading}>
+            {loading ? 'Creating…' : 'Create Account'}
+          </button>
+
+          <div className="allynet-student-bottom-buttons">
+            <button
+              onClick={() => navigate(-1)}
+              type="button"
+              className="allynet-student-back-button"
+            >
+              Back
+            </button>
+            <button
+              type="button"
+              className="allynet-student-login-button"
+              onClick={() => navigate('/login')}
+            >
+              Log In
+            </button>
           </div>
-        </div>
+        </form>
       </div>
-      <div className="right-section">
-        <img src="/assets/login.png" alt="" />
-      </div>
-    </section>
+    </div>
+  </div>
+  <div className="allynet-student-right">
+    <img src="/assets/login.png" alt="login illustration" />
+  </div>
+</section>
   );
 }
-
