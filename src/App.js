@@ -18,6 +18,7 @@ import EventDetailPage from './page/event-page/event-detail-page/eventDetail';
 import MyPost from './page/my-post-page/myPost';
 import MentorRequest from './page/mentor-request/mentorRequest';
 import { UserDataProvider } from './context/UserDataContext';
+import ProfileForm from './page/edit-detail/editDetail';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
             <Route path='/loginas' element={<LoginasPage />} />
             <Route path='/signin' element={<SignupPage />} />
             <Route path='/profile/:id' element={<AlumniDetailPage />} />
+            <Route path='/profile/details' element={<ProfileForm/>} />
             <Route path='/' element={<Main />} >
               <Route path='' element={<FeedPage />} />
               <Route path='/post/:id' element={<PostDetail />} />

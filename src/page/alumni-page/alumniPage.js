@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './alumniPage.css';
 import { Link } from 'react-router-dom';
+import ProfileForm from '../edit-detail/editDetail';
 
 
 

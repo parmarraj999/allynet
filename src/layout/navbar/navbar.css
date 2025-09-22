@@ -67,6 +67,7 @@
 
 .mobile-navbar{
   position: absolute;
+  user-select: none;
   top: 91%;
   left: 50%;
   border: 1px solid #0080ff;
@@ -78,7 +79,7 @@
   display: none;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 8px;
+  padding: 0px 4px;
   background: white;
 }
 
@@ -94,6 +95,13 @@
 
 .mobile-navbar-item svg{
   color: #0080ff;
+}
+
+.active {
+  background: #0080ff;
+}
+.active svg{
+  color: white;
 }
 
 @media screen and (max-width:765px) {
