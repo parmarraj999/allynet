@@ -23,30 +23,30 @@ function LandingPage() {
   return (
     <div className="landing-parent">
 
-        <div className="navbar-card">
-          <div className="logo-text">ALLYNET</div>
-          <div className="menu-links">
-            <a href="#home" className="menu-item">Home</a>
-            <div className="menu-item dropdown">
-              Feature
-              <svg style={{ width: '20px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
-              <div className="dropdown-content">
-                <a href="#feature1">Feature 1</a>
-                <a href="#feature2">Feature 2</a>
-              </div>
+      <div className="navbar-card">
+        <div className="logo-text">ALLYNET</div>
+        <div className="menu-links">
+          <a href="#home" className="menu-item">Home</a>
+          <div className="menu-item dropdown">
+            Feature
+            <svg style={{ width: '20px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+            <div className="dropdown-content">
+              <a href="#feature1">Feature 1</a>
+              <a href="#feature2">Feature 2</a>
             </div>
-            <div className="menu-item dropdown">
-              Community
-              <svg style={{ width: '20px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
-              <div className="dropdown-content">
-                <a href="#forum">Forum</a>
-                <a href="#events">Events</a>
-              </div>
-            </div>
-            <a href="#about" className="menu-item">About Us</a>
           </div>
-          <Link to='/login' className="navbutton">Join for Free</Link>
+          <div className="menu-item dropdown">
+            Community
+            <svg style={{ width: '20px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+            <div className="dropdown-content">
+              <a href="#forum">Forum</a>
+              <a href="#events">Events</a>
+            </div>
+          </div>
+          <a href="#about" className="menu-item">About Us</a>
         </div>
+        <Link to='/login' className="navbutton">Join for Free</Link>
+      </div>
 
       <section className="hero-section">
         <div className="big-image-container">
@@ -92,27 +92,27 @@ function LandingPage() {
           </div>
           <div class="right-part">
             <div className="cards">
-             <svg style={{width:"35px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13 14.0619V22H4C4 17.5817 7.58172 14 12 14C12.3387 14 12.6724 14.021 13 14.0619ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM17.7929 19.9142L21.3284 16.3787L22.7426 17.7929L17.7929 22.7426L14.2574 19.2071L15.6716 17.7929L17.7929 19.9142Z"></path></svg>
+              <svg style={{ width: "35px" }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13 14.0619V22H4C4 17.5817 7.58172 14 12 14C12.3387 14 12.6724 14.021 13 14.0619ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM17.7929 19.9142L21.3284 16.3787L22.7426 17.7929L17.7929 22.7426L14.2574 19.2071L15.6716 17.7929L17.7929 19.9142Z"></path></svg>
               <h2>Verified Mentorship</h2>
               <p>Connect with verified alumni & seniors who guide you with real experience — not random advice</p>
             </div>
             <div className="cards">
-              <svg style={{width:"35px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18 3C19.6569 3 21 4.34315 21 6C21 7.65685 19.6569 9 18 9H15C13.6941 9 12.5831 8.16562 12.171 7.0009L11 7C9.9 7 9 7.9 9 9L9.0009 9.17102C10.1656 9.58312 11 10.6941 11 12C11 13.3059 10.1656 14.4169 9.0009 14.829L9 15C9 16.1 9.9 17 11 17L12.1707 17.0001C12.5825 15.8349 13.6937 15 15 15H18C19.6569 15 21 16.3431 21 18C21 19.6569 19.6569 21 18 21H15C13.6941 21 12.5831 20.1656 12.171 19.0009L11 19C8.79 19 7 17.21 7 15H5C3.34315 15 2 13.6569 2 12C2 10.3431 3.34315 9 5 9H7C7 6.79086 8.79086 5 11 5L12.1707 5.00009C12.5825 3.83485 13.6937 3 15 3H18ZM18 17H15C14.4477 17 14 17.4477 14 18C14 18.5523 14.4477 19 15 19H18C18.5523 19 19 18.5523 19 18C19 17.4477 18.5523 17 18 17ZM8 11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H8C8.55228 13 9 12.5523 9 12C9 11.4477 8.55228 11 8 11ZM18 5H15C14.4477 5 14 5.44772 14 6C14 6.55228 14.4477 7 15 7H18C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"></path></svg>
+              <svg style={{ width: "35px" }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18 3C19.6569 3 21 4.34315 21 6C21 7.65685 19.6569 9 18 9H15C13.6941 9 12.5831 8.16562 12.171 7.0009L11 7C9.9 7 9 7.9 9 9L9.0009 9.17102C10.1656 9.58312 11 10.6941 11 12C11 13.3059 10.1656 14.4169 9.0009 14.829L9 15C9 16.1 9.9 17 11 17L12.1707 17.0001C12.5825 15.8349 13.6937 15 15 15H18C19.6569 15 21 16.3431 21 18C21 19.6569 19.6569 21 18 21H15C13.6941 21 12.5831 20.1656 12.171 19.0009L11 19C8.79 19 7 17.21 7 15H5C3.34315 15 2 13.6569 2 12C2 10.3431 3.34315 9 5 9H7C7 6.79086 8.79086 5 11 5L12.1707 5.00009C12.5825 3.83485 13.6937 3 15 3H18ZM18 17H15C14.4477 17 14 17.4477 14 18C14 18.5523 14.4477 19 15 19H18C18.5523 19 19 18.5523 19 18C19 17.4477 18.5523 17 18 17ZM8 11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H8C8.55228 13 9 12.5523 9 12C9 11.4477 8.55228 11 8 11ZM18 5H15C14.4477 5 14 5.44772 14 6C14 6.55228 14.4477 7 15 7H18C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"></path></svg>
               <h2>Career Roadmap</h2>
               <p>Follow step-by-step roadmaps for placements, higher studies, and exams with curated notes & guides.</p>
             </div>
             <div className="cards">
-             <svg style={{width:"35px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 2H13V1H11V2H7C5.34315 2 4 3.34315 4 5V8C4 10.7614 6.23858 13 9 13H15C17.7614 13 20 10.7614 20 8V5C20 3.34315 18.6569 2 17 2ZM11 7.5C11 8.32843 10.3284 9 9.5 9C8.67157 9 8 8.32843 8 7.5C8 6.67157 8.67157 6 9.5 6C10.3284 6 11 6.67157 11 7.5ZM16 7.5C16 8.32843 15.3284 9 14.5 9C13.6716 9 13 8.32843 13 7.5C13 6.67157 13.6716 6 14.5 6C15.3284 6 16 6.67157 16 7.5ZM4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4Z"></path></svg>
+              <svg style={{ width: "35px" }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 2H13V1H11V2H7C5.34315 2 4 3.34315 4 5V8C4 10.7614 6.23858 13 9 13H15C17.7614 13 20 10.7614 20 8V5C20 3.34315 18.6569 2 17 2ZM11 7.5C11 8.32843 10.3284 9 9.5 9C8.67157 9 8 8.32843 8 7.5C8 6.67157 8.67157 6 9.5 6C10.3284 6 11 6.67157 11 7.5ZM16 7.5C16 8.32843 15.3284 9 14.5 9C13.6716 9 13 8.32843 13 7.5C13 6.67157 13.6716 6 14.5 6C15.3284 6 16 6.67157 16 7.5ZM4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4Z"></path></svg>
               <h2>AI Mentor Match</h2>
               <p>Our AI instantly matches you with the best mentor based on your interests, skills, and goals</p>
             </div>
             <div className="cards">
-              <svg style={{width:"35px"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7.00002C16.4183 7.00002 20 10.5817 20 15C20 19.4183 16.4183 23 12 23C7.58172 23 4 19.4183 4 15C4 10.5817 7.58172 7.00002 12 7.00002ZM12 10.5L10.6775 13.1797L7.72025 13.6094L9.86012 15.6953L9.35497 18.6406L12 17.25L14.645 18.6406L14.1399 15.6953L16.2798 13.6094L13.3225 13.1797L12 10.5ZM13 1.99902L18 2.00002V5.00002L16.6366 6.13758C15.5305 5.55773 14.3025 5.17887 13.0011 5.04951L13 1.99902ZM11 1.99902L10.9997 5.04943C9.6984 5.17866 8.47046 5.55738 7.36441 6.13706L6 5.00002V2.00002L11 1.99902Z"></path></svg>
+              <svg style={{ width: "35px" }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7.00002C16.4183 7.00002 20 10.5817 20 15C20 19.4183 16.4183 23 12 23C7.58172 23 4 19.4183 4 15C4 10.5817 7.58172 7.00002 12 7.00002ZM12 10.5L10.6775 13.1797L7.72025 13.6094L9.86012 15.6953L9.35497 18.6406L12 17.25L14.645 18.6406L14.1399 15.6953L16.2798 13.6094L13.3225 13.1797L12 10.5ZM13 1.99902L18 2.00002V5.00002L16.6366 6.13758C15.5305 5.55773 14.3025 5.17887 13.0011 5.04951L13 1.99902ZM11 1.99902L10.9997 5.04943C9.6984 5.17866 8.47046 5.55738 7.36441 6.13706L6 5.00002V2.00002L11 1.99902Z"></path></svg>
               <h2>Gamified Learning</h2>
               <p>Stay motivated with badges, rewards, and leaderboards while learning and sharing knowledge.</p>
             </div>
 
-         </div>
+          </div>
         </div>
       </section>
 
@@ -148,7 +148,91 @@ function LandingPage() {
         <a href="#signup" className="hero-button-black">Get Started</a>
 
 
-    </section>
+      </section>
+
+     
+
+      <section className="faq-section">
+        <div className="left-section">
+          <div className="left-text">
+            <h1>We believe in the power of guidance. To help you out, we provide
+              <span className="left-text2"> free mentorship Q&A sessions with our alumni </span>
+            </h1>
+          </div>
+          <div className="button-arrow">
+            <a href="#signup" className="faq-button">
+              Get Started
+              <img src='../../../../public/assets/arrowleft.png' alt="" className="arrowleft" />
+            </a>
+          </div>
+        </div>
+        <div className="faqs">
+          <div className="question">
+            <p>How does ALLYNET connect me with mentors?
+              <img src='../../../../public/assets/arrowdown.png' alt="" className="arrowdown" />
+            </p>
+          </div>
+          <div className="question">
+            <p>Are the roadmaps verified by alumni?
+              <img src='../../../../public/assets/arrowdown.png' alt="" className="arrowdown" />
+            </p>
+          </div>
+          <div className="question">
+            <p>Can I use ALLYNET offline?
+              <img src='../../../../public/assets/arrowdown.png' alt="" className="arrowdown" />
+            </p>
+          </div>
+          <div className="question">
+            <p>Is mentorship free or paid?
+              <img src='../../../../public/assets/arrowdown.png' alt="" className="arrowdown" />
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="footer-section">
+        <div className="footer">
+          <div className="footermain">
+            <div className="allynet">
+              <div className="logo2">ALLYNET</div>
+              <h4>Your Ally in Career Growth</h4>
+              <div className="icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style={{color:'white'}} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style={{color:'white'}} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                
+
+              </div>
+            </div>
+            <div className="quicklinks">
+              <h>Quick Links</h>
+              <a href="#home" className="quicklinks">Home</a>
+              <a href="#feature" className="quicklinks">Feature</a>
+              <a href="#howitworks" className="quicklinks">How it Works</a>
+              <a href="#pricing" className="quicklinks">Pricing</a>
+              <a href="#faq" className="quicklinks">FAQ</a>
+              <a href="#contact" className="quicklinks">Contact</a>
+            </div>
+            <div className="resources">
+              <h>Resources</h>
+              <a href="#roadmap" className="resources">Roadmap</a>
+              <a href="#mentorship" className="resources">Mentorship</a>
+              <a href="#community" className="resources">Community</a>
+              <a href="#e-library" className="resources">e-resources</a>
+            </div>
+            <div className="legal">
+              <h>Legal</h>
+              <a href="#privacypolicy" className="legal">Privacy Policy</a>
+              <a href="#termsofservice" className="legal">Terms of Services</a>
+            </div>
+          </div>
+
+          <div className="footerbottom">
+            <h>© 2025 ALLYNET. All rights reserved</h>
+          </div>
+        </div>
+      </section>
 
     </div>
   );
